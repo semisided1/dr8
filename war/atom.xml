@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" >
+<id>http://www.designr8.com/blog/atom.xml</id>
+  <title>Designr8.com Blog</title>
+  <updated>Sat Nov 12 22:24:59 MST 2011</updated>
+  <author>
+    <name>Darrell Dupas</name>
+    <email>darrell@designr8.com</email>
+    <uri>http://designr8.com/blog/atom.xml</uri>
+  </author>
+  <link rel="self" href="http://designr8.com/blog/atom.xml"/>
+  <icon>http://www.designr8.com/favicon.ico</icon>
+  <logo>http://www.designr8.com/logo.png</logo>
+  <category term="Computers" />
+  <category term="Technology" />
+  <category term="Linux"/>
+  <category term="Software" ></category>
+  
+ 
+<entry>
+<title>designr8.com newsletter</title>
+<link href="http://www.designr8.com/blog?title=designr8.com newsletter"></link>
+<id>http://www.designr8.com/blog?title=designr8.com newsletter</id>
+<summary>the reason why i havent been blogging ...</summary>
+<updated>Fri Nov  2 15:16:56 MDT 2012</updated>
+<category>portrait</category>
+<category>appengine</category>
+<thumbnail>https://lh6.googleusercontent.com/-UWcyU1yhVVw/UJQ3XJgTojI/AAAAAAAAFvc/82jRDncZzgU/s200/steven03.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh6.googleusercontent.com/-UWcyU1yhVVw/UJQ3XJgTojI/AAAAAAAAFvc/82jRDncZzgU/s585/steven03.png" />
+<p>you know you get on a role doing something, then it gets broken up, by hopefully something else equally productive, and 
+it feels good, then after a while you can go back to what it was you where doing before, and you've forgoten a few things, but you 
+find your legs again, then switch again, and of course you've forgotten a few things, but then something happens, it becomes
+easier and easier to switch and wear different hats. i guess its called learning.</p>
+<p>under the category of learning how little you know and making it a good thing, i discovered recently i know only some very
+surface stuff about JPA, java persistance something, and i had been using it for projects quite remarkably, considering how little
+i knew. then of course i hit a road block in a project, because i got some unexpected behavior. i tried to solve it by
+growing my knowledge of this 'robust' database platform, and struggled. i'd like to share the details, but lets justs say
+its really not that interesting, and i still havent gone back and found out what was wrong totally, so there is no point.</p>
+<p>the point is, sometimes a road block is exactly what you need to find a whole new approach to a problem</p>
+<p>so i ditched jpa for some socalled 'low level api' which is basically a glorified hashtable, in the process i lost a
+lot of things i really didnt need</p>
+<p>what is good about databases is the query language, gql, a dumbed down sql with limited joins, and the 
+ability to modify records by selecting just them and making the changes and calling persist, that kind of data
+isolation is really nice, but it turns out, not always necasary</p>
+<p>when i decided to ditch the robust database for this simple hashtable, i discovered i could do a lot of preprocessing
+and essentially have the data ready to use, rather than the database aproach of having something totally dynamic</p>
+<p>sure the result is something more static, but it actually does everything required and is WAY faster</p>
+<p>i will try to make a comparison with the work flow, maybe that is called a use case, cant remember that compsci stuff;)</p>
+<h2>the database way</h2>
+<ol>
+<li>administrator adds data to a data store</li>
+<li>web designer builds pages that can use parameters to query the database and display results</li>
+<li>user chooses what data she would like to see</li>
+<li>web page connects to the database</li>
+<li>database returns the data to the servlet</li>
+<li>servlet formats / renders a page with the data</li>
+</ol>
+<h2>the blob hashtable way</h2>
+<ol>
+<li>programer designs a way to process a blob of data from an external source</li>
+<li>data gets processed on without being stored generating all the possible web pages needed</li>
+<li>user chooses data she would like to see</li>
+<li>servlet returns the right formated web page</li>
+</ol>
+<p>the big difference is when the web page is built, in the second way, all the possible 
+pages are made in advance. i should also say that using the database way, it is also possible
+to store pre processed requests, in fact that is what memcache is for, and i use that strategy
+to speed up the database way as well</p>
+<p>so where did we start off? i was rambling vaguely about how i would leave something, and comeback to it, 
+gaining understanding each time you switch, despite feeling a bit clumsy when you first jump back and forth</p>
+<p>that ramble is basically what its like to wear different hats in your life, i wear a lot of different hats, 
+and each time is switch i seem to have to wait for the 'ah ha' moments where i realize, hey i know what
+i am doing here.</p>
+<p>i think the breaks between wearing those hats allows you to step back and develop a whole new approach the
+next time you put on that hat again</p>
+<p>for me, ditching jpa, for appengine datastore api was never obvious, until i stepped away for sometime, did 
+a bunch of painting, ... well from the perspective of reading my blog, it looks like i was absent, but really
+i was figuring out a few things for topnotchgames.ca -  you can check out the source code on my github</p>
+<p>oh, that painting above, is totally unrelated to this article, i made it and it never got used so, i thought
+i would just put it up - that is steven layton from stevenlaytonsphotography.ca</p>
+</content>
+</entry> 
+  
+
+<entry>
+<title>little house on the edge of the prairie</title>
+<link href="http://www.designr8.com/blog?title=little house on the edge of the prairie"></link>
+<id>http://www.designr8.com/blog?title=little house on the edge of the prairie</id>
+<summary>a cube shack in nordegg</summary>
+<updated>Wed Oct 24 02:28:09 MDT 2012</updated>
+<category>landscape</category>
+<category>painting</category>
+<thumbnail>https://lh3.googleusercontent.com/-mLbl7ODceWs/UIelIWbHXkI/AAAAAAAAFvE/kqkr52O6IbI/s200/rmh.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh3.googleusercontent.com/-mLbl7ODceWs/UIelIWbHXkI/AAAAAAAAFvE/kqkr52O6IbI/s599/rmh.png" ></img>
+<p>trying gimp 2.8, thought I would change things up a little bit. i have gotten into a bit
+of a groove with mypaint, but my fav brush there is angled, the scraper, well, its not even
+a brush really, but its a tool - its really cool, but i wish it wasnt so narrow</p>
+<p>the brush dynamics in gimp are a lot better now than they where in the past -
+thumbs up to the newest version 2.8</p>
+<p>brush dynamics is making all the difference in the gimp, hey, this painting was done in less
+than 15 minutes after midnight ....</p>
+
+</content>
+</entry>
+
+
+
+<entry>
+<title>OpenDNS Family Shield</title>
+<link href="http://www.designr8.com/blog?title=OpenDNS Family Shield"></link>
+<id>http://www.designr8.com/blog?title=OpenDNS Family Shield</id>
+<summary>Protecting your family online with OpenDNS</summary>
+<updated>Mon Oct 22 12:28:30 MDT 2012</updated>
+<category>internet</category>
+<thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9EAx5KO_TYPt4YLP9uQ0yh0UlXb6DvyMdD2zYVTcwvZYBWYc</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<H2>DNS for dummies</H2>
+<UL>
+	<LI> DNS stands for Domanin Name Server </LI>
+	<LI> DNS is what the internet uses to
+	locate websites, it is a directory 
+	</LI>
+	<LI> The internet is a collection of
+	computers with addresses, just like a city is a collection of houses
+	with addresses </LI>
+	<LI> Computers understand ip addresses
+	that look like phone numbers. eg:</LI> 
+</UL>
+ <pre><code> 
+ $ nslookup opendns.com
+ 
+ Server:		208.67.222.123
+ 
+ Address:	208.67.222.123#53
+ 
+ 
+ 
+ Non-authoritative answer:
+ 
+ Name:	opendns.com
+ 
+ Address: 67.215.92.211
+ </code></pre>
+ <p>
+ The nslookup command is asking where do
+I find the computer that OpenDNS.com uses to serve its website. The
+answer is called the Address. Your computer uses this address to get
+the website. 
+ </p><p>
+ There are a number of ways to block
+adult content on your computers. FamilyShield by OpenDNS can be a
+solution for your entire network that does not require software on
+each computer. It can be set for all computers on your network by
+your modem or router. Aternatively, it can be used on each computer. 
+ </p>
+ 
+<H2>How it Works</H2>
+ <p>
+ Your default network configuration gets
+its DNS from your internet providers DHCP server. DHCP stands for
+Dynamic Host Control Protocol, which basically sets up your computers
+address, so content can find you when you request it AND your DNS, so
+you can find the content when you request it. 
+ </p>>
+ <p>
+ Internet Service Providers (ISP) do not
+restrict what types of content it will allow you to search for in
+anyway. It is possible for you to replace your ISPs DNS with a
+filtering DNS, like OpenDNS FamilyShield DNS. 
+ </p>
+ <p>
+ OpenDNS Family shield is a DNS, but it
+does not give you the address of sites that are on its list of
+inappropriate websites. When a request is made for adult content, the
+computer is directed to a page that indicates that site is blocked. 
+ </p>
+ 
+<h2>Advantages of OpenDNS</h2>
+<UL>
+	<LI> No extra software on your computer </LI>
+	<LI> Results are independent of browser
+	choice (works for all browsers) </LI>
+	<LI> Community maintained list of
+	inappropriate sites, thousands of users use this service</LI> 
+	<LI> Can be configured for a network
+	wide solution on your router </LI>
+	<LI> Difficult to bypass (impossible
+	from the browser) </LI>
+	<LI> Free </LI>
+</UL>
+ 
+ 
+<H2>Disadvantages of OpenDNS</H2>
+<UL>
+	<LI> Marginally adult content on sites
+	that contain mostly moderated content is not filtered; for
+	instance YouTube </LI> 
+	<LI> Only as good as its block list;
+	new sites are always appearing, though it can guess that these sites
+	should be blocked based on its active directory management</LI> 
+	<LI> Not a replacement for supervised
+	internet usage, essentially because of YouTube there is no
+	replacement as good as adult supervised internet use </LI> 
+	<LI> Requires knowledge of your systems
+	to change your DNS settings (one time only) <br/>
+	<A HREF="https://store.opendns.com/familyshield/setup/">https://store.opendns.com/familyshield/setup/</A>
+	</LI> 
+</UL>
+
+
+</content>
+</entry>
+
+
+
+<entry>
+<title>sweetpea quickie</title>
+<link href="http://www.designr8.com/blog?title=sweetpea quickie" ></link>
+<id>http://www.designr8.com/blog?title=sweetpea quickie</id>
+<updated>Mon Oct  8 00:28:48 MDT 2012</updated>
+<summary>just a painting of a flower</summary>
+<category>flower</category>
+<category>mypaint</category>
+<category>paint</category>
+<thumbnail>https://lh4.googleusercontent.com/-F0tUf0Dadfk/UHJwsVYMi5I/AAAAAAAAFss/F6YX7If3HlM/s200/sweatpea.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh4.googleusercontent.com/-F0tUf0Dadfk/UHJwsVYMi5I/AAAAAAAAFss/F6YX7If3HlM/s777/sweatpea.png">
+</img>
+<p>dropped into another draw and chat, and everyone left. aw well, managed to squiggle out
+this paining of a sweetpea. </p>
+<p>who love the sun?</p>
+</content>
+</entry>
+
+
+<entry>
+<title>fergie - the dutchess - clumsy - painting</title>
+<link href="http://www.designr8.com/blog?title=fergie - the dutchess - clumsy - painting" ></link>
+<id>http://www.designr8.com/blog?title=fergie - the dutchess - clumsy - painting</id>
+<updated>Fri Oct  5 23:26:51 MDT 2012</updated>
+<summary>love sic thang</summary>
+<category>pop star worship</category>
+<category>painting</category>
+<thumbnail>https://lh3.googleusercontent.com/-IGnFZaw_K3Y/UG_Bt3W4EdI/AAAAAAAAFsU/4ou_G6nQCWs/s200/The%2BDutchess.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh3.googleusercontent.com/-0ARaa8iDrLA/UG_AFT2GY3I/AAAAAAAAFsU/yvDm7pabtPM/s700/fergie.png" ></img>
+<h2>finding that draw and chat can be a good time</h2>
+<p>if you look for google plus hangouts, draw and chat hangout you will likely find 
+a good hangout, check it out!</p>
+<p>i was driving home from edmonton on thursday and the song Clumsy by Fergie
+came on the radio (89.3), so, since then, i've been blasting that song on my
+new stereo.</p>
+<p>good times</p>
+</content>
+
+</entry>  
+  
+  
+  
+<entry>
+<title>three legged deer</title>
+<link href="http://www.designr8.com/blog?title=three legged deer"></link>
+<id>http://www.designr8.com/blog?title=three legged deer</id>
+<updated>Fri Oct  5 00:07:13 MDT 2012</updated>
+<summary>found this laying around, many people seem to like the 
+source photo so i painted it</summary>
+<category>wildlife</category>
+<category>nature</category>
+<category>paint</category>
+<thumbnail>https://lh6.googleusercontent.com/-fES0WAIntoM/UG54dzR4ywI/AAAAAAAAFqg/LCg_TQGn9MQ/s220/deer02.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh6.googleusercontent.com/-fES0WAIntoM/UG54dzR4ywI/AAAAAAAAFqg/LCg_TQGn9MQ/s770/deer02.png" ></img>
+<h2>I was swimming ... </h2>
+<p>in whitecourt on a day off this summer. There is a very 
+nice man made lake in town, it has waterslides and a very nice path to walk around on.</p>
+<p>In the distance I spotted these 2 deer and there was a path that went by them, so, i walked
+along the path pretending not to notice them. Then i snuck around behind a small hill that was 
+close to them, so that i was between the 2 deer. I had seen some people before try to get close
+with no luck, but I felt that if i could get between them they wouldnt know which way to go.
+I was right, I moved slowly and held my phone up to cover my face the whole time. This guy
+just looked at me like i was meant to be there and kept eating. I was only 10 feet away.</p>
+<p>good times</p>
+
+
+</content>
+</entry>  
+  
+  
+<entry>
+<title>which painting is better</title>
+<link href="http://www.designr8.com/blog?title=which painting is better"></link>
+<id>http://www.designr8.com/blog?title=which painting is better</id>
+<updated>Wed Oct  3 10:01:24 MDT 2012</updated>
+<summary>I am stuck on what to do with this painting</summary>
+<category>Google+</category>
+<category>Paint</category>
+<thumbnail>https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s200/kayc03.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<p>I have been working on this for 2 days, thank you 
+<a href="https://plus.google.com/u/0/104384988816098278951/posts">+Kay C</a>
+for helping me with this one, hope it isnt to weird! 
+</p>
+
+<img src="https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s200/kayc03.png">
+</img>
+
+
+<img src="https://lh5.googleusercontent.com/-4mHZzpNm-h8/UGxfUBtMK4I/AAAAAAAAFpk/pKFn2FiFQcE/s576/kayc02.png"></img>
+<img src="https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s576/kayc03.png"></img>
+<img src="https://lh5.googleusercontent.com/-4mHZzpNm-h8/UGxfUBtMK4I/AAAAAAAAFpk/pKFn2FiFQcE/s200/kayc02.png"></img>
+
+<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG9HWFpLWXE0bkxoRVNzcDIwODJMM3c6MQ" width="760" height="626" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</content>
+</entry>  
+  
+  
+<entry>
+<title>mypaint farm Draw and Chat Hangout</title>
+<link href="http://www.designr8.com/blog?title=mypaint farm Draw and Chat Hangout"></link>
+<id>http://www.designr8.com/blog?title=mypaint farm Draw and Chat Hangout</id>
+<updated>Sat Sep 29 00:16:46 MDT 2012</updated>
+<summary>Some thoughts on G+ Hangouts and MyPaint</summary>
+<category>Google</category>
+<category>paint</category>
+<thumbnail>https://lh5.googleusercontent.com/-WZ1Uyj_6oCU/UGaOjfJp12I/AAAAAAAAFo8/5Zp7hEcfLq0/s200/farm01.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh5.googleusercontent.com/-WZ1Uyj_6oCU/UGaOjfJp12I/AAAAAAAAFo8/5Zp7hEcfLq0/s1066/farm01.png" ></img>
+<h2>I was in a nice public hangout and ...</h2>
+<p>I made this painting, the hangout was called Draw and Chat, so, cool, thats what we did.</p>
+<p>MyPaint is running nicely on my computer. Though the google talk plugin crashes about every 20
+minutes when i am doing a screenshare.</p>
+<p>One of the guys in the hangout mentioned that one of the other people there does not like
+creating hangouts without him there because he has a better block list. Which got me thinking
+that block lists should be a specific circle and you should be able to share them like other circles.
+Unlike other circles though you would not want to get posts from them, they would be like anti circles,
+with the only thing in common with circles is the management of them. ... Just a thought, of course
+a good troll wouldnt have an issue with making a new gmail account everyday.</p>
+<p>Anyway the reference image for this sketch is on my <a href="http://t.co/ZjfxsDQk">twit pics</a></p>
+</content>
+</entry>  
+  
+  
+
+<entry>
+<title>xsl to convert from unix date to w3c complete date</title>
+<link href="http://www.designr8.com/blog?title=xsl to convert from unix date to w3c complete date"></link>
+<id>http://www.designr8.com/blog?title=xsl to convert from unix date to w3c complete date</id>
+<updated>Sun Sep 23 11:08:38 MDT 2012</updated>
+<summary>I use the output of unix date command to date my blog entries, but
+sitemaps require w3c complete date format</summary>
+<category>technology</category>
+<category>internet</category>
+<thumbnail>https://lh4.googleusercontent.com/-Qfy-7KakX1Q/UF9Di_04AAI/AAAAAAAAFls/Ye9DPmq2yrw/s200/XML1.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh4.googleusercontent.com/-Qfy-7KakX1Q/UF9Di_04AAI/AAAAAAAAFls/Ye9DPmq2yrw/s200/XML1.jpg" ></img>
+<h2>Where to start?</h2>
+<p>info before rant i guess. The unix date command its the defacto
+representation of dates because it is ubiquitous. That said the official date spec
+is iso 8601, and it specifies a wide range of formats. Sitemap.org uses a 
+further restricted / simplified version of iso 8601 standard - the complete
+date format. </p>
+<h2>io</h2>
+<p>Sun Sep 23 11:08:38 MDT 2012</p>
+<p>2012-09-23</p>
+<h2>xsl code</h2>
+<p>this gist is the formatdate function from part of an xsl</p>
+<script src="https://gist.github.com/3772418.js"> </script>
+<p>you can see the rest of the xsl in my github,
+<a href="https://github.com/semisided1/designr8/blob/master/war/sitemap.xsl"> here </a> </p>
+<p>you can see the xml input to this file <a href="https://github.com/semisided1/designr8/blob/master/war/blog/atom.xml">here</a></p>
+<p>you can see the xml output to this transform <a href="http://www.designr8.com/sitemap.xml" > here </a> </p>
+<h2>&lt;end-of-useful-information/&gt;</h2>
+<p>The word of the year is fanboy, this is funny to me because
+I have been around long enough to have seen a few passing fads.
+xml was a major advancement in data representation and there was
+more than a few fanboys out there for xml, sorta like apple and
+androids now, and xml before. lately there is a lot of hype around
+javascript and json, whatever, that doesnt make xml useless.
+</p> 
+<p>I sympathize with some of these trends, and struggle with others. I am
+fond of xml,linux,android but struggle with javascript,iphone. I also
+do like dubstep ..??
+</p>
+<p>so the json crowd doesnt like xml because its too verbose, has 
+a lot of extra characters, and is very strict. Its also tends to 
+be not as action ready. 
+</p>
+<p>personally i think that xml excels in readability, i like things
+to be fully qualified and you know what namespace everything is comming
+from. so, for server side stuff, xml is very nice
+</p>
+<p>json is good for browser client, since it is javascript. xsl/xml embedding
+in web pages has never been supported by browsers, so, unless you use 
+xml as a wire format and create a custom ui, i guess we are sol using
+xml, though i am sure i am a bit clueless about the extent soap was 
+intended for.
+</p>
+<p>for my purposes, i love xml, this is one fad i am not ready to 
+let go of, plus i've put all the time in to learn xsl ...
+</p>
+<p>comming soon maybe ... using saxon xslt in appengine ... In the 
+meantime if you are interested in that, you could grok my github.
+</p>
+
+
+</content>
+</entry>
+  
+<entry>
+<title>late night hangout rose</title>
+<link href="http://www.designr8.com/blog?title=late night hangout rose"></link>
+<id>http://www.designr8.com/blog?title=late night hangout rose</id>
+<updated>Sun Sep 23 01:28:52 MDT 2012</updated>
+<summary>just doodling while I was chatting in a public Google Hangout.</summary>
+<category>rose</category>
+<category>painting</category>
+<category>art</category>
+<thumbnail>https://lh6.googleusercontent.com/-NiASNTzZ6-s/UF65uhc5QqI/AAAAAAAAFks/lcY-OukfdPE/s200/rose01.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh6.googleusercontent.com/-NiASNTzZ6-s/UF65uhc5QqI/AAAAAAAAFks/lcY-OukfdPE/s500/rose01.png" ></img>
+<p>not much to say about this one, just started drawing and this is the result
+</p>
+<p>something as pointless as a flower is perfect to draw to relieve
+stress because there is no plan, only results</p>
+</content>
+</entry>
+  
+  
+  
+
+
+  
+  
+  
+<entry>
+<title>xfce dual monitor with onboard video card</title>
+<link href="http://www.designr8.com/blog?title=xfce dual monitor with onboard video card"></link>
+<id>http://www.designr8.com/blog?title=xfce dual monitor with onboard video card</id>
+<updated>Sat Sep 22 20:36:27 MDT 2012</updated>
+<summary>How to setup dual monitors on xfce4 with one crappy onboard video card that has hdmi</summary>
+<category>technology</category>
+<thumbnail>https://lh3.googleusercontent.com/-snUIvoXFO88/UF4dwyctbrI/AAAAAAAAFhw/9_acwjyeEUs/s200/IMAG0596.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh4.googleusercontent.com/-dM0fIe9T9Po/UF4gVFEBj7I/AAAAAAAAFiA/2bYzzky1TzE/s903/xv.png" ></img>
+<p>I have a middle of the road onboard video card on my comptuer, but it has both hdmi and vga outputs. This is 
+how I managed to get dual head on my computer, this really rocks.
+</p>
+<h2>Install arandr / xrandr</h2>
+<h2>Use arandr to test configuration</h2>
+<p>Hopefully you know what your monitor resolution should be, if not find out before you
+plug both in. Once you know what your desired resolution for each monitor will be plug them both in.
+Now logout and login. Now run arandr, but you will have perhaps some resolution problems because
+the default is to have both monitors the same resolution and displaying the same thing.</p>
+<ol>
+<li>Set the resolution for your desired monitors from the outputs menu.
+</li><li>
+Drag the rectangle with the same label as your right monitor to the right of the rectangle
+representing your left monitor.</li>
+<li>Select apply.</li>
+<li>Repeat until satisfied</li>
+</ol>
+<h2>Add to xfce4 startup and modify .xinitrc</h2>
+<ol>
+<li>select Layout -> save as. Create a file that you will be able to remember, for me i used
+ /home/dd/sbin/dualmon.sh </li>
+<li> chmod +x dualmon.sh</li>
+<li> add dualmon.sh to your xfce4 startup. Application Menu -> Settings -> Session and Startup </li>
+<li> this totally breaks the script called startxfce4 unfortunately, so, the best way to fix this is ...
+ (hehe this is so dirty) edit your .xinitrc file in your home directory like this:</li>
+ <code><pre>#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+    [ -x "$f" ] &amp;&amp; . "$f"
+  done
+  unset f
+fi
+exec /bin/sh /etc/xdg/xfce4/xinitrc
+ </pre></code>
+ </ol>
+ <p> I am sure there is a good reason why startxfce4 sets up some environment variables and
+ does a bunch of checks, but it must not apply to me, because this works fine.</p>
+ <p> Enjoy the screen real estate!! </p>
+</content>
+</entry>
+  
+  
+  
+  
+  
+<entry>
+<title>Linux so I can Work - My Arch Linux Setup</title>
+<link href="http://www.designr8.com/blog?title=Linux so I can Work - My Arch Linux Setup"></link>
+<id>http://www.designr8.com/blog?title=Linux so I can Work - My Arch Linux Setup</id>
+<updated>Sun Sep  2 12:11:59 MDT 2012</updated>
+<summary>Arch Linux setup</summary>
+<category>technology</category>
+<thumbnail>http://lh3.googleusercontent.com/-7PX5kwm53Jg/UEOwHTDBlpI/AAAAAAAAFd0/zUEasy4_GB8/s200/Screenshot+-+090212+-+12%3A56%3A58.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-7PX5kwm53Jg/UEOwHTDBlpI/AAAAAAAAFd0/zUEasy4_GB8/s894/Screenshot+-+090212+-+12%3A56%3A58.png" ></img>
+<p>Well I've resisted flaunting my Arch Linux Setup for sometime. After reading
+a blog on how the Linux Desktop is dead I have to stand up and object vehemently.
+</p>
+<p>First of all, I should say that I have been using Linux since the mid 90's. Slackware was the
+first distro I became comfortable with, then I migrated to Debian, then to Ubuntu, and then back
+to Slackware, and finally I am now using Arch Linux.</p>
+<p>Arch Linux is very much Like Slackware with Slackbuilds. I find that the package
+management is just a little smoother, because there are more binary packages and it
+seems a little smoother. I should mention that I do not use pacman, the default package
+manager, I use yaourt, but it is rare that I install stuff from the AUR repositories, so pacman
+is fine for most cases.</p>
+<p>Package management, boot loader configuration and system configuration are what
+define a Linux Distribution. Arch Linux is very straight forward and well documented
+and has been a pleasure to maintain.</p>
+<p>After a basic install Arch Linux has virtually nothing. Perfect!</p>
+<p>I recomend learing how to setup yaourt to add packages. Here we will add what we need:</p>
+<ul>
+<li>
+slim : x11 startup / login manager
+</li><li>
+xfce4-session : manages the x11 session
+</li><li>
+xfdesktop : background and folders on the desktop
+</li><li>
+xfwm4 : window manager
+</li><li>
+xfce4-panel : launcher and applet container
+</li><li>
+terminal : the xfce terminal
+</li><li>
+xfce4-taskmanager : helpful
+</li>
+</ul>
+<code><pre>
+$ yaourt -S slim xfce4-session xfdesktop xfwm4 xfce4-panel terminal xfce4-taskmanager
+$ yaourt xfce4-goodies
+</pre>
+</code>
+<p>I am fond of using slim as the x11 startup manager to do this change the default run level in /etc/inittab to 5,
+then add the login line to your /etc/inittab</p>
+<code><pre>
+#somewhere near start of inittab:
+# Boot to X11
+id:5:initdefault:
+
+#somewhere near bottom of inittab:
+# lines for starting a login manager
+x:5:respawn:/usr/bin/slim
+</pre> 
+</code>
+<p>though slim does have a mechanism to select desktops with the f2 key, i did not figure out how to setup 
+multiple desktop and reverted to the old school xinitrc method. to do this we will edit ~/.xinitrc </p>
+<code><pre>
+xfce4-panel &amp;
+exec startxfce4
+</pre>
+</code>
+<p>enjoy! if you have problems with the setup of slim / xfce4, to retest your setup you do not need to 
+reboot your system. simply login as root by pressing alt+f1, issue the command </p>
+<code><pre>
+# init 3
+# init 5
+</pre>
+</code>
+</content>
+</entry>
+
+
+<entry>
+<title>Juicy Veggie Burgers Redo</title>
+<link href="http://www.designr8.com/blog?title=Juicy Veggie Burgers Redo"></link>
+<id>http://www.designr8.com/blog?title=Juicy Veggie Burgers Redo</id>
+<updated>Sat Jun  9 20:44:21 MDT 2012</updated>
+<summary>Mushroom, onion and red pepper skewers on a veggie burger</summary>
+<category>food</category>
+<thumbnail>http://lh3.googleusercontent.com/-bVHos0Rne_E/T9QJVt643DI/AAAAAAAAE08/9I_bxGNzLXk/s200/IMAG0322.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-bVHos0Rne_E/T9QJVt643DI/AAAAAAAAE08/9I_bxGNzLXk/s880/IMAG0322.jpg" ></img>
+<p>Ok, veggie burgers on the grill on a Saturday is beginning to be a recurring pattern for me. This time 
+I will share my secret marinade for veggie skewers and top it off with guacomole.</p>
+<p>Prepare your guacomole ahead of time.</p>
+<p>In a sealable container put the following in order and shake</p>
+<ul>
+<li>2 tablespoons of sesame oil</li>
+<li>2 tablespoons of soy sauce</li>
+<li>1 tablespoon of balsamic (optional)</li>
+<li>lots of halved mushrooms 1 or 2 cups</li>
+<li>1 pepper cut up</li>
+<li>half a spanish onion cubed</li>
+</ul>
+<p>put that on skewrs and save the remaining sauce to pour on them while grilling</p>
+<p>grill some veggie burgers about half as long as the veggies, and grill some fresh bread cut thick</p>
+<p>enjoy!</p>
+</content>
+</entry>
+
+
+
+<entry>
+<title>Juicy Veggie Burgers</title>
+<link href="http://www.designr8.com/blog?title=Juicy Veggie Burgers"></link>
+<id>http://www.designr8.com/blog?title=Juicy Veggie Burgers</id>
+<updated>Sat Jun  2 22:26:34 MDT 2012</updated>
+<summary>Tomato, onion and avocado skewers on a veggie burger</summary>
+<category>food</category>
+<thumbnail>http://lh3.googleusercontent.com/-doeGblpZFF4/T8rpx9ftMgI/AAAAAAAAEzs/dHx6yY1RmmU/s200/2012%2B-%2B1 </thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-doeGblpZFF4/T8rpx9ftMgI/AAAAAAAAEzs/dHx6yY1RmmU/s880/2012%2B-%2B1" ></img>
+<p>Sometimes veggie burgers can get dry on the grill, really they do not need to be cooked
+for very long, but one way to make your grilled veggie burger less dry is a skewer of veggies.</p>
+<p>Here I have a skewer with onion, tomato and avocado grilled lightly with hot sauce.</p>
+<p>enjoy!</p>
+</content>
+</entry>
+
+
+<entry>
+<title>HDR photography on Android Ice Cream Sandwich</title>
+<link href="http://www.designr8.com/blog?title=HDR photography on Android Ice Cream Sandwich"></link>
+<id>http://www.designr8.com/blog?title=HDR photography on Android Ice Cream Sandwich</id>
+<updated>Tue May 22 21:14:53 MDT 2012</updated>
+<summary>Quick guide to HDR on latest Android - HTC One X</summary>
+<category>Technology</category>
+<thumbnail>https://lh3.googleusercontent.com/-R61rD_p-Qyk/TiRxmG-mEtI/AAAAAAAAAG0/4GYL8XiQZ_w/s200/android_vs_ios_by_phragmentation-d2tw4uf.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<p>HDR is kindof a new technique to get inferior cameras to create photos with 
+a wider range of contrast. It gives photos a more real look. There are some 
+drawbacks to HDR as well.
+</p>
+<p> HDR combines 3 images, a regular image with one over exposed and one under exposed.
+The dark areas of the over exposed image are emphasised while the light areas of the 
+under exposed image are emphasised.
+</p>
+<img src="http://dl.dropbox.com/u/51147382/Screenshot_2012-05-22-17-06-17.png" ></img>
+<p> Firstly, finding the HDR setting on the Android is not difficult. When you are in 
+the camera, tap the A in the top left corner and scroll to find the choice from the
+various camera modes.
+</p>
+<p>Because 3 images are required the shot is not as quick as a regular photo, so you have
+to hold the camera very still and there should be very little movement of major objects in the forefront of the photo.
+HDR is not well suited for shots that are very far away because the slightest movement of the camera is exagerated
+by the distance and the effect does not work, everything will appear to have a slight shadow.
+</p>
+<p>Ok, lets look at 2 photos, one taken with a regular setting, then the second with HDR. 
+</p>
+<h2>Regular HTC One X Photo</h2>
+<img src="http://dl.dropbox.com/u/51147382/2012-05-20%2013.31.36.jpg" />
+<h2>HDR HTC One X Photo</h2>
+<img src="http://dl.dropbox.com/u/51147382/2012-05-20%2013.31.44.jpg" />
+</content>
+</entry>
+
+<entry>
+<title>How to make guacamole</title>
+<link href="http://www.designr8.com/blog?title=How to make guacamole"></link>
+<id>http://www.designr8.com/blog?title=How to make guacamole</id>
+<updated>Fri May 11 17:04:17 MDT 2012</updated>
+<summary>This is a staple condiment that is so so good.</summary>
+<category>Food</category>
+<thumbnail>http://lh4.googleusercontent.com/-cLCLmUVu0os/T62adMQ64dI/AAAAAAAAEyg/5_Cs8fKFKmY/s200/IMAG0189.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh4.googleusercontent.com/-cLCLmUVu0os/T62adMQ64dI/AAAAAAAAEyg/5_Cs8fKFKmY/s880/IMAG0189.jpg" />
+<ul>
+<li>
+2 or 3 ripe avocados – they are ripe when they are dark green and soft
+</li><li>
+1 or 2 jalapeno peppers – we wont be using the seeds from the inside
+</li><li>
+1 lime or lemon or lime or lemon juice – a fresh lime is best
+</li><li>
+onion – any kind (1/4 cup)
+</li><li>
+garlic – optional 1 or 2 cloves
+</li><li>tomato – optional 1 ripe tomato
+</li>
+</ul>
+<p>
+Cut and mix avocados, onion, peppers, tomatoes, garlic (fine). Squeeze the juice of a lime into it. Refrigerate covered.
+</p>
+</content>
+
+</entry>
+
+<entry>
+<title>Jasper Deer in MyPaint</title>
+<link href="http://www.designr8.com/blog?title=Jasper Deer in MyPaint" > </link>
+<id>http://www.designr8.com/blog?title=Jasper Deer in MyPaint</id>
+<updated>Tue Apr 24 14:29:12 MDT 2012</updated>
+<summary>Drawing a deer from some photos taken on a wonderful fall trip to Jasper</summary>
+<category>Art</category>
+<thumbnail>http://lh5.googleusercontent.com/-IWT-pZSmghw/T5cL1FYamGI/AAAAAAAAEcg/bHux9zwC2j0/s200/deer01.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh5.googleusercontent.com/-IWT-pZSmghw/T5cL1FYamGI/AAAAAAAAEcg/bHux9zwC2j0/s880/deer01.png" />
+<p>I feel that the fall is the best time to visit the mountain parks here. The reference photo was taken in November near Jasper.
+The deer have a nice grey hue and are ambivalent to us - the only tourists around at this time. They casually eat to
+fatten up for what surely must be a long winter.</p>
+<p>If only everyday could be as breath taking as this one. Making this drawing was not hard, it took me to a place
+where I want to be.</p>
+<p><a href="http://fav.me/d4xjxom">Order Prints on DeviantArt</a></p>
+</content>
+</entry>
+
+
+
+<entry>
+<title>Panama in MyPaint with Knife tool and DeviantArt</title>
+<link href="http://www.designr8.com/blog?title=Panama in MyPaint with Knife tool and DeviantArt"  ></link>
+<id>http://www.designr8.com/blog?title=Panama in MyPaint with Knife tool and DeviantArt</id>
+<updated>Mon Apr 23 19:48:13 MDT 2012</updated>
+<summary>A quick lanscape using MyPaint 1.0.0 knife tool</summary>
+<category>Art</category>
+<thumbnail>http://lh5.googleusercontent.com/-Kj9T2mGOGFA/T5YE3eBhuHI/AAAAAAAAEbo/yvyGnRcxPjU/s200/panama01.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh5.googleusercontent.com/-Kj9T2mGOGFA/T5YE3eBhuHI/AAAAAAAAEbo/yvyGnRcxPjU/s880/panama01.png" />
+<p> I started this painting very late last night while I was in a Google Hangout. I promise from now on I will
+not delete my work. To get to the point I am at I have deleted perhaps hundreds of paintings. You have too. 
+That or publish it and forget about it.
+</p>
+<p> As some of you may know I am looking for ways to become self employed. Since I have been a computer person
+since the mid 80's you'd think it would not be a problem to find work, but, things are not so simple. With hundreds
+of people graduating from universities and college in the area, the labour market is somewhat satchurated. 
+</p> 
+<p> Anyway, I have made my sketches available on deviantArt, and you can purchase prints there and I get some 
+cash for that. <a href="http://fav.me/d4xh9im" >DeviantArt - semisided1</a> Semisided1 is my username there and twitter.
+Also, you can add to my wealth by clicking advertisments below.
+
+</p>
+</content>
+</entry>
+
+
+<entry>
+<title>Landscape in Mypaint</title>
+<link href="http://www.designr8.com/blog?title=Landscape in Mypaint"></link>
+<id>http://www.designr8.com/blog?title=Landscape in Mypaint</id>
+<updated>Thu Apr 19 12:55:22 MDT 2012</updated>
+<summary>A quick landscape using MyPaint 1.0.0 </summary>
+<category>Art</category>
+<thumbnail>http://lh3.googleusercontent.com/-6IivBQEbiac/T5BdhkD8gBI/AAAAAAAAEVk/dFljnnGis1Y/s200/Lahul.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-6IivBQEbiac/T5BdhkD8gBI/AAAAAAAAEVk/dFljnnGis1Y/s880/Lahul.jpg" />
+<p>The rock and roll expression 'back in the saddle again' is how I feel right now. I had taken a 
+break from the computer for a week or 2 then when I returned there was sufficient new ongoings to
+inspire me to get going. Firstly, Google Hangouts have been a great help for my motivation. Secondly,
+Ubuntu 12.04 LTS has reached final beta and is looking nearly usable, I have upgraded and am enjoying 
+new versions of my favorite applications. MyPaint 1.0.0 is really usable and the best reason for the
+update.
+</p>
+
+</content>
+</entry>
+
+
+
+
+
+
+
+
+<entry>
+<title>Mushroom Asparagus Melt</title>
+<link href="http://www.designr8.com/blog?title=Mushroom Asparagus Melt"></link>
+<id>http://www.designr8.com/blog?title=Mushroom Asparagus Melt</id>
+<updated>Mon Mar  5 19:18:14 MST 2012</updated>
+<summary>Vegetarian Bachelor Food Blog</summary>
+<category>food</category>
+<thumbnail>http://lh4.googleusercontent.com/-fiPul_6Og4g/T1V6s_lTq1I/AAAAAAAAEQo/pnMrn-mFfYY/s200/Photo%2520Mar%252005%252C%25206%252034%252003%2520PM.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh4.googleusercontent.com/-fiPul_6Og4g/T1V6s_lTq1I/AAAAAAAAEQo/pnMrn-mFfYY/s640/Photo%2520Mar%252005%252C%25206%252034%252003%2520PM.jpg" />
+<p>
+This is my first food blog sorta, well, first one here anyway, I had a blogger post last year about 
+a triffle but I quit blogger, I liked the random trafic there, but I did not like the canned pages, 
+not that this template is wonderful, but the fact remains that its not canned and I can do what I like 
+with it.
+</p>
+<p>
+As you can see I get distracted from the topic easily, todays blog is about being a lazy dude who
+recently became vegetarian. 
+</p>
+<h2>Mushroom Asparagus Melt</h2>
+<ul>
+<li>havaarti or swiss</li>
+<li>whole wheat baguette</li>
+<li>butter (not margarine)</li>
+<li>mushrooms and asparagus</li>
+<li>optional balsamic vinigar and kalamata olives</li>
+</ul>
+<ol>
+<li>cut mushrooms in half then slice 3 mm thick slices</li>
+<li>cut asaragus into 2 cm bits</li>
+<li>fry m &amp; a in 15 ml of butter</li>
+<li>grate cheese and put on slice baguette</li>
+<li>put fried m &amp; a on baguette</li>
+<li>broil</li>
+<li>serve with glass of tomato juice and dip in balsamic</li>
+</ol>
+</content>
+</entry>
+
+
+ <entry>
+<title>Tree Planter Stamp</title>
+<link href="http://www.designr8.com/blog?title=Tree Planter Stamp"></link>
+<id>http://www.designr8.com/blog?title=Tree Planter Stamp</id>
+<updated>Fri Feb 24 20:16:01 MST 2012</updated>
+<summary>Testing my new computer, reinstalled all my Software</summary>
+<category>paint</category>
+<thumbnail>https://lh5.googleusercontent.com/-kaOos8G3eDo/UF1SkqTpUVI/AAAAAAAAFgE/BMnnnXalBJQ/s200/SKETCHBOOK%2BCOVER.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://dl.dropbox.com/u/51147382/SKETCHBOOK%20COVER.png" />
+<p>
+keep cool - a tree planter stamp
+
+</p>
+
+
+</content>
+</entry> 
+  
+ 
+  
+<entry>
+<title>Boring is Good</title>
+<link href="http://www.designr8.com/blog?title=Boring is Good"></link>
+<id>http://www.designr8.com/blog?title=Boring is Good</id>
+<updated>Sun Jan  1 15:39:34 MST 2012</updated>
+<summary>10 minute portrait in MyPaint</summary>
+<category>paint</category>
+<thumbnail>https://lh6.googleusercontent.com/-WDh20FjE_KQ/UF1TdQs7bcI/AAAAAAAAFgM/Tr3FjGKXn4w/s200/ida.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://dl.dropbox.com/u/51147382/ida.png" />
+<p>This portrait was not hard to do. I have a fondness for pretty girls and this
+was no exception. With wonderful big eyes and a infectious shyness, painting Ida
+was not hard at all. The results are fine, but what is better is how easy it was
+for me to do. Sometimes painting can be a chore. Creating without fear is a mindset that
+can only be done once you ignore the tools and embrace the result. Being bored over
+the holidays sure gave me a lot of time to think. Not sure what I will do next.</p>
+
+
+</content>
+</entry>
+
+
+  
+<entry>
+<title>Flowers in MyPaint</title>
+<link href="http://www.designr8.com/blog?title=Flowers in MyPaint"></link>
+<id>http://www.designr8.com/blog?title=Flowers in MyPaint</id>
+<updated>Tue Nov 29 09:59:32 MST 2011</updated>
+<summary>Flowers using Ramon R-S Web blend brush in MyPaint for Linux. </summary>
+<category>paint</category>
+<thumbnail>http://lh3.googleusercontent.com/-CsdImsNKmgM/TtULEFNZENI/AAAAAAAAELs/QjJsucV-6Tc/s200/flower.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-CsdImsNKmgM/TtULEFNZENI/AAAAAAAAELs/QjJsucV-6Tc/s880/flower.png" />
+<p>No matter how long I worked on this painting I could
+always find problems with it. There was just too many things that looked the same and had no real contrast, so
+everything looked fake. Then I decided that the point of the picture was not to make the green bits look real, 
+but rather just focus on some contrast to get the flowers to pop off the screen. This turned out to be a difficult
+thing to do with a blending brush, and I was tempted to switch brushes for certain parts, but I stuck with Ramon
+R-S wet blend. There was a lot of filling in on this painting so a blend brush is good for that, but it is hard
+to get the blend brush to keep the colours lively, because they all just get murky. I also had a white background
+to start and this made the initial opacity of the brush to be greyish, so I found myself painting over
+painted areas, so, after a while i was filling with a fat brush to get a background gist and then a finer brush to
+get a bit of detail. Not the most enjoyable painting I've ever done just because it was hard not to want to make it
+look realistic, something I want to get away from.</p>
+</content>
+</entry>
+
+
+<entry>
+<title>Cuche wins at Lake Louise</title>
+<link href="http://www.designr8.com/blog?title=Cuche wins at Lake Louise"></link>
+<id>http://www.designr8.com/blog?title=Cuche wins at Lake Louise</id>
+<updated>Sat Nov 26 22:31:47 MST 2011</updated>
+<summary>Painting of Didier Cuche done in MyPaint. Used the Ramon R-S Wet blend brush.</summary>
+<category>paint</category>
+<thumbnail>http://lh5.googleusercontent.com/-SOz2LZhh3oo/TtHJldg2c8I/AAAAAAAAELg/vQvSm0VJYNw/s200/cuche.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh5.googleusercontent.com/-SOz2LZhh3oo/TtHJldg2c8I/AAAAAAAAELg/vQvSm0VJYNw/s880/cuche.png" />
+<p>This is about a half hour drawing. I did an outline with pencil then colored the rest with the Ramon R-S wet 
+blend brush. MyPaint does take sometime to get used too, really need to master the keyboard commands, so I have
+sticky notes, stuck to my monitor with all the shortcut keys.</p>
+</content>
+</entry>  
+  
+  
+<entry>
+<title>Forest Watercolor in MyPaint</title>
+<link href="http://www.designr8.com/blog?title=Forest Watercolor in MyPaint"></link>
+<id>http://www.designr8.com/blog?title=Forest Watercolor in MyPaint</id>
+<updated>Thu Nov 24 14:41:17 MST 2011</updated>
+<summary>A 5 minute painting in MyPaint using watercolor brush.</summary>
+<category>paint</category>
+<thumbnail>https://lh4.googleusercontent.com/-78M0hSPSr-k/Ts629zf6kiI/AAAAAAAAELc/glucrmXMjx0/s200/forest%252520watercolor%25252001.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh4.googleusercontent.com/-78M0hSPSr-k/Ts629zf6kiI/AAAAAAAAELc/glucrmXMjx0/s880/forest%252520watercolor%25252001.jpg" />
+<p>I am feeling very blue today and decided to cheer myself up by painting anything.
+The idea being that whatever the result is, in under 5 minutes that is what the painting
+is going to be. I have never used the watercolor brushes in MyPaint and I think that they
+deserve a little more attention.</p>
+</content>
+</entry>
+  
+<entry>
+<title>Christmas in November</title>
+<link href="http://www.designr8.com/blog?title=Christmas in November"></link>
+<id>http://www.designr8.com/blog?title=Christmas in November</id>
+<updated>Fri Nov 18 21:16:37 MST 2011</updated>
+<summary>HoHoHo how doodles can become Christmas greetings</summary>
+<category>silly</category>
+<category>christmas</category>
+<category>paint</category>
+<thumbnail>http://lh6.googleusercontent.com/-xQoxDPVIML8/Tscs46_PeCI/AAAAAAAAELA/3GblL5UpYg8/s200/designr8%252520merry%252520christmas.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh6.googleusercontent.com/-xQoxDPVIML8/Tscs46_PeCI/AAAAAAAAELA/3GblL5UpYg8/s880/designr8%252520merry%252520christmas.png" />
+
+<p>If you are on my christmas list you are getting a jar of real homemade Yorksire Picalilli ... I am not kidding, its very tasty.</p>
+<p>I am not going to say this was an attempt at a new logo gone bad, oh hell I just did. Peace!</p>
+</content>
+</entry>  
+  
+<entry>
+<title>Using ffmpeg to capture your desktop</title>
+<link href="http://www.designr8.com/blog?title=Using ffmpeg to capture your desktop" ></link>
+<id>http://www.designr8.com/blog?title=Using ffmpeg to capture your desktop</id>
+<updated>Fri Nov 18 09:39:53 MST 2011</updated>
+<summary>Capture your desktop using ffmpeg</summary>
+<category>screencast</category> 
+<category>recording</category> 
+<category>ffmpeg</category> 
+<thumbnail>https://lh5.googleusercontent.com/-fVUN1FZWhO8/UF1UrZnq9EI/AAAAAAAAFgU/_VIzQjXHVGs/s200/ffmpeg.jpg</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<p>
+Captureing your desktop is useful for creating tutorials. I've discovered that 
+a lot of people have trouble following directions given in text, and if they
+see how easy it really is, a lot of the confusion simply dissapears. For instance,
+this tutorial could be summed up by providing a one line command, but does it
+really help someone that is not versed in command line?
+</p>
+<p>
+ffmpeg works on windows, linux, and likely mac. 
+</p>
+<p>
+<img src="https://lh5.googleusercontent.com/-fVUN1FZWhO8/UF1UrZnq9EI/AAAAAAAAFgU/_VIzQjXHVGs/w313-h235-n-k/ffmpeg.jpg" />
+<a href="http://ffmpeg.org/">ffmpeg website</a>
+</p>
+<p>step 1: determine the name of your screen (follows -i on step 3)</p>
+<code> bash$ echo $DISPLAY </code>
+<p>step 2: determine the resolution of your screen (follows -s on step 3)</p>
+<code> bash$ xvidtune -show</code>
+<p>step 3: test the ffmpeg command (no audio)</p>
+<code>ffmpeg -f x11grab -r 30 -s 1360X768 -i :0.0 -vcodec libx264 -vpre lossless_ultrafast -threads 0 -y output.mkv</code>
+<p>step 4: stop the recording by pressing q</p>
+<p>step 5: test the recording </p>
+<code>ffplay output.mkv</code>
+<p>step 6: save the command in a text file and run it from a console other
+than the one you want to capture</p>
+<code> echo "ffmpeg -f x11grab -r 30 -s 1360X768 -i :0.0 -vcodec libx264 -vpre lossless_ultrafast -threads 0 -y embed.mkv" > scast.command
+</code>
+<p>step 7: arrange your desktop and then drop to a console by pressing Alt+f1</p>
+<p>step 8: source the saved command (use the file name from step6)</p>
+<code>bash$ . scast.command</code>
+<p>step 9: switch back to x session with Alt+leftarrow</p>
+<p>step 10: do your tutorial and end it with Alt+f1, then q</p>
+<p>step 11: login to youtube and upload screencast. youtube restricts videos be less than 15 minutes.</p>
+<p>step 12: embed your video into a webpage</p>
+<iframe sytle="position:ablsolute;left:0px;width=1280px;height=720px" width="1280" height="720" src="http://www.youtube.com/embed/9vQ9PvM53Ng?hd=1" frameborder="0" allowfullscreen="true"></iframe>
+</content>
+</entry>
+
+<entry>
+<title>Printing Address Cards for Thunderbird</title>
+<link href="http://www.designr8.com/blog?title=Printing Address Cards for Thunderbird" ></link>
+<id>http://www.designr8.com/blog?title=Printing Address Cards for Thunderbird</id>
+<updated>Sun Nov 13 14:33:17 MST 2011</updated>
+<summary>Beginners Guide to CSV, XML, C++, XSL, and CSS</summary>
+<category>Programming</category> 
+<category>Web Programming</category> 
+<category>XML</category>
+<category>Addresses</category> 
+<thumbnail>http://lh3.googleusercontent.com/-Wo6wRWWHKV8/TsCLhDbC-_I/AAAAAAAAEKc/W1W7dOlw_wc/s200/contact-card.png</thumbnail>
+<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-Wo6wRWWHKV8/TsCLhDbC-_I/AAAAAAAAEKc/W1W7dOlw_wc/s157/contact-card.png"
+     style="float:left;" />
+<ul>
+<li>Motivation for printing Contacts, and issues with using default printouts</li>
+<li>The nature of exported contact files – csv from Thunderbird</li>
+<li>The advantages and nature of XML</li>
+<li>Processing text files with C++ in Linux and Windows</li>
+<li>Using XSL and CSS to display custom contact cards</li>
+</ul>
+<h2>Motivation</h2>
+<p>
+There are many ways to keep a list of your contacts, but the most convenient is the address book feature in your email program. Email programs or services often automatically gather contact information of the people you know. It is useful to add as much information as you like to the contact file, even birthdays and hobbies. Though I personally do not use printouts, I have had a request from a user who is unhappy with the way Thunderbird prints out the contacts. Looking further into this issue I discovered that the printouts from many contact management places lack sophistication and waste paper. So I have made a quick fix for now that could possibly lead to some sort of web based contact management system that supports many types of printing, including standard labels. For now, I focused on printing something to travel with or keep on your desk to be used if the computer is off on a standard page (a4).
+</p>
+<h2>CSV</h2>
+<p>
+CSV stands for comma separated values, which means that each line represents one entry or contact and all the fields are separated by commas. This is a common format that most programs can export – Outlook, Mozilla Thunderbird, Excel, and Gmail to name a few. You will need a good text editor for this whole tutorial, I recommend Scite http://www.google.com/search?q=download+SciTE. When you open a csv file in a text editor you will see the first line has column or field names, followed by the data lines. Each line represents one contact, and the values are parallel to the field names in the first line. Two commas beside each other means no data for that field. If a field value has a comma in it the value must be quoted.  
+</p>
+<h2>XML</h2>
+<p>
+The reason csv is so lousy is that you can not use advanced markup languages to select fields and perform formatting to target web browsers. Once we convert the csv to xml we will be in a much better spot to format the output. This is not a tutorial on XML, there is a tonne of information on XML, I recommend http://www.w3schools.com to start, and http://zvon.org as a reference. If you are new to the subject do not bother going there yet, just have a look at the sample files to get an idea of the difference.
+XML caveats
+</p>
+<p>
+Comments in XML are surrounded by <pre>&lt;!-- and --&gt;</pre>, they are ignored by the browser.
+XML values have special characters. Those characters are:<pre> &amp;,&lt;,&gt;,”,' </pre>
+The tactic used by XML is instead of surrounding values that contain the special characters in some way, we replace the characters with a character sequence that represents the special character.
+</p>
+<pre>
+&amp; becomes &amp;amp;
+&lt; becomes &amp;lt;
+&gt; becomes &amp;gt;
+&quot; becomes &amp;quot;
+&#39; becomes &amp;#39;
+</pre>
+<p>
+Another caveat is that XML field names can not have a space in them, so we can eliminate or replace the spaces in field names.
+Also, within an XML file you can refer to other files that will transform it so that it is displayable. Each file serves a purpose – The XML file holds data without display formatting, the XSL (or transformation file) holds instructions to encapsulate the data in bare HTML without any style. And finally the CSS page applies styles to the HTML, which controls things like spacing, margins, colors, block flow and page breaks. This decoupling has an advantage in that to make a change in the appearance you do not have to grok a huge monolithic program, everything is divided up. So if we decide to provide alternative formatting we will not have to change our C++ code, only our CSS.
+</p>
+<h2>Using C++ to transform CSV to XML
+</h2>
+<p>
+Perhaps there are thousands of ways to do this job. But I instinctively use C++ because that is what I think in. If your first programming language was something else you probably wont even have kept reading. Carefully choosing what languages to learn early on is important, but not critical. Most languages have similar features. C++ is not alone in being widely supported, lots of free compilers, and standardized across different platforms. C++ is rarely used for internet applications though. 
+This C++ program is about as simple as they come without being trivial. So lets get the tools and try some coding. If you are totally new to programming that is fine. What we are doing is using a text editor to write the program, a compiler to convert the program into an executable, and the operating system to feed the CSV file into the program as data.
+Obtain g++ for your system
+</p>
+<p>
+MS Windows download and install Mingw http://www.google.com/search?q=download+mingw.
+Linux use this command
+</p>
+<pre>
+sudo apt-get install g++
+</pre>
+<p>
+You can goto http://www.cplusplus.com/ for a reference and other beginner tutorials.
+As mentioned a compiler transforms a text file into something that can execute. There are languages that this is done dynamically without the compile step, like a bash script. All you need to know is how to make folders or directories, navigate to them, create a text file in the directory and save it. This article does not cover that see http://www.google.com/search?q=bash+basics if you are lost right now.
+Note: if you are using Mingw or Cygwin with SciTE, your home folders at the bash prompt are not the same directory as they would be at the windows command prompt (cmd) – for instance, my mingw home is c:\mingw\msys\1.0\home\darrell in windows, but is simply /home/darrell in the mingw bash shell. You can use either shell, but its easier to use the mingw shell because you wont have to add g++ to your PATH in cmd.
+</p>
+<p>
+download the tar.gz, it contains: <br/>
+contact-cards-tbird-cvs.cpp <br/>
+contact-cards.xsl <br/>
+contact-cards.css <br/>
+thunderbird.csv <br/>
+... then extract the files and change into the folder
+</p>
+<pre>
+tar -zxvf contact-cards.tar.gz &amp;&amp; cd contact-cards
+</pre>
+<a href="/blog/contact-cards.tar.gz">contact-cards.tar.gz</a>
+<img src="http://lh6.googleusercontent.com/-Gjn82Q7gyEg/TsCLi9H2YRI/AAAAAAAAEKk/Zm8Qdi5Q0Kg/s700/contact-cards-workflow.png"
+style="clear:both;" />
+<p>
+Open the files in Scite or any plain text editor. Then to compile and execute:
+</p>
+<pre>
+$ g++ -pedantic -Os contact-cards-tbird-cvs.cpp -o contact-cards-tbird-cvs
+$ ./contact-cards-tbird-cvs &lt;thunderbird.csv &gt;contact-cards.xml
+</pre>
+<p>
+or just view the result here (use firefox it supports xsl)
+<a href="/blog/contact-cards/contact-cards.xml">contact-cards.xml</a>
+</p>
+
+<p>
+Open the file contact-cards.xml in a text editor and Firefox to view the result. To view the html, use the menu (File, Save as) in Firefox and open that file in a text editor.
+</p>
+<h2>Looking at the C++ code</h2>
+<ul>
+<li>Comments in C++ are for the programmer to explain what is happening 
+</li><li>Programs can be divided up into logical units using functions
+</li><li>Variables are blocks of memory that hold values 
+</li><li>Values come in two flavors, primitive and objects
+</li><li>Primitaves are small values that usually are used to control logic of your program, whereas Objects usually represent the data and can be complex
+</li><li>All primative data types start with a lowercase letter, 
+and usually Object data types start with an Uppercase letter.
+</li>
+</ul>
+<p> 
+We will rely heavily on the most useful object in C++ which is the String or String class. A string is a sequence of characters. A class has a set of operations or functions that it can perform to give you information about the String, or give you back a different String.
+Both Objects and primitives are created in my example at the start of a function.
+Its not that useful for me to dissect the code for you, this program is not heavily tested, so, go ahead and break it and tell me about it. Programming requires a break and fix mentality. The best code is code that does not need a lot of comments. If a block of code has a purpose, it is best to put it in its own function even if it gets called only once. Simplicity and clarity are traits of good code, tricky convoluted programs might be interesting, but its not good when you discover there is a bug.  
+</p>
+<h2>
+Looking at the XSL code
+</h2>
+<p>
+Firstly, an XSL file is a valid XML file. Secondly, there is a lot of information on XSL. Again, w3schools and zvon is really all you need for learning and reference. The goal of the XSL is to transform the XML into HTML. Its not typical html though, its HTML without formatting. The html tags are logical partitions of the data we want to choose from the XML.
+The XSL file uses a LINK tag to link to the style sheet (CSS).
+</p>
+</content>
+</entry>
+
+
+
+
+
+  
+  <entry >
+    <title >Resurrecting an Emachine</title>
+    <link href="http://www.designr8.com/blog?title=Resurrecting an Emachine"/>
+    <id>http://www.designr8.com/blog?title=Resurrecting an Emachine</id>
+    <updated>Sat Nov 12 23:00:00 MST 2011</updated>
+    <summary>Using Ubuntu Linux to recover files from corrupt hard drive. Emachine recover.</summary>
+  <category term="Emachine" />
+  <category term="Linux"/>
+  <category term="Repair" />
+  <thumbnail>https://lh6.googleusercontent.com/-D5ZSp7ZidZM/UF1V4cqTumI/AAAAAAAAFgc/MIIhaw9CPQU/s200/arch-linux-black.png</thumbnail>
+    <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <img src="https://lh6.googleusercontent.com/-D5ZSp7ZidZM/UF1V4cqTumI/AAAAAAAAFgc/MIIhaw9CPQU/s700/arch-linux-black.png"
+     style="float:left;" />
+<p>
+	I was faced with a computer that would not boot at all, safe mode or
+	otherwise. But there was a lot of valuable pictures on the computer. I
+	am not one to take apart a computer and plug the hard drive into
+	another working computer, to me, this is a very last measure. I am a
+	software person, not a hardware person, so if I can solve the problem
+	using software that is my first choice.
+</p>
+	<p>
+		The first task was to recover the photos and documents. I used a regular
+		Ubuntu Linux install iso image. Instead of installing Linux at the
+		first boot menu I selected &quot;Try Ubuntu&quot;
+	</p>
+	<p>
+		It mounted the Windows partiton no problem and I found the picures, but
+		what I did not realize was that I could not take the Linux disc out of
+		the tray so that I could burn the files onto another disc. Fortunately
+		the computer had an SD card slot. I could also used the customers
+		camera as an external hard drive using usb.
+	</p>
+	<p>
+		After copying the photos to the SD card I wanted to hit a home run and slap
+		Windows onto the computer using the Emachine recovery partion. I had
+		recently fixed an HP desktop this way and that can be a very quick
+		fix. But to no avail, the recovery partion on an Emachine is useless
+		without a recovery cd.
+	</p>
+	<p>
+		All we had was the Windows sticker on the side of the box. Then I
+		downloaded a copy of Windows – the same edition that was listed on the
+		sticker, burnt it to disc and installed it. You can download Windows
+		from some torrent sites though I am not sure it is legal. But since we
+		have the sticker on the computer I felt like we had paid for Windows
+		for this computer once already.
+	</p>
+	<p>
+		However there was some major problems with the Windows CD, firstly there
+		where no drivers, so I had no sound, no internet. I was working behind
+		the clock now and I was thinking I might run out of gas trying to fix
+		Windows. I also knew that Linux would be able to tell me what I needed
+		to know about the hardware. Installing Linux on her computer was a
+		godsend. It told me what her hardware was. Once I knew that i was able
+		to download the drivers and put them into the Windows partition from
+		the working Linux. Also, I knew if I did not finish fixing her windows
+		up she would have a working Linux system.
+	</p>
+	<p>
+		After I got the Windows drivers installed, I had to patch up the system so
+		that it was usable and would not self destruct (like the original
+		system). So there was Windows updates to get the current Internet
+		Explorer and MSN. Also you can get a free copy of spyware doctor from
+		google that has an anti-virus in it as well. I also put ccleaner on
+		there so the system will not bloat and become slow. I also put a
+		firewall on there, which oddly enough came with her network card
+		driver from Nvidia. Thats it!
+	</p>   
+	
+    </content>
+  </entry>
+  
+
+</feed>
