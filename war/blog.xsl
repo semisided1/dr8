@@ -72,10 +72,12 @@
 		</ul>
 		<ul>
 		<li>Sites by Designr8</li>
-		<li><a href="http://www.topnotchgames.ca">topnotchgames.ca</a></li>
 		<li><a href="http://www.stevenlaytonsphotography.ca/">stevenlaytonsphotography.ca</a></li>
 		<li><a href="http://www.eclecticshots.com/">electicshots.com</a></li>
 		<li><a href="http://www.snowbgone.ca/">snowbgone.ca</a></li>
+		<li><a href="http://callpaulbobcat.com/">callpaulbobcat.com</a></li>
+		 	
+		 	<li><a href="http://bestchoiceentertainment.ca/">bestchoiceentertainment.ca</a></li>
 		</ul>
 	<!--	<script type="text/javascript">
 google_ad_client = "ca-pub-7326905713177295";
@@ -88,35 +90,35 @@ google_ad_height = 200;
 
 
 <div class="ad">
-			<script type="text/javascript">
-				<xsl:comment>
-					google_ad_client = "ca-pub-7326905713177295";
-					/* designr8 */
-					google_ad_slot = "1639107101";
-					google_ad_width = 250;
-					google_ad_height = 250;
-					//
-				</xsl:comment>
-			</script>
-			<script type="text/javascript"
-				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-			</script>
-		</div>
-		<div class="ad">
-			<script type="text/javascript">
-				<xsl:comment>
-					google_ad_client = "ca-pub-7326905713177295";
-					/* designr8 two */
-					google_ad_slot = "1577198311";
-					google_ad_width = 250;
-					google_ad_height = 250;
-					//
-				</xsl:comment>
-			</script>
-			<script type="text/javascript"
-				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-			</script>
-		</div>
+	<script type="text/javascript">
+		<xsl:comment>
+			google_ad_client = "ca-pub-7326905713177295";
+			/* designr8 */
+			google_ad_slot = "1639107101";
+			google_ad_width = 250;
+			google_ad_height = 250;
+			//
+		</xsl:comment>
+	</script>
+	<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+</div>
+	<div class="ad">
+		<script type="text/javascript">
+			<xsl:comment>
+				google_ad_client = "ca-pub-7326905713177295";
+				/* designr8 two */
+				google_ad_slot = "1577198311";
+				google_ad_width = 250;
+				google_ad_height = 250;
+				//
+			</xsl:comment>
+		</script>
+		<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
 
 
 </div>

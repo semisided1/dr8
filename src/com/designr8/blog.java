@@ -23,9 +23,14 @@ import java.util.HashMap;
 public class blog extends HttpServlet {
 
     
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	TransformerFactory factory;
 
-    public void init() throws ServletException {
+    @Override
+	public void init() throws ServletException {
         super.init();
         System.setProperty("javax.xml.transform.TransformerFactory",
                            "net.sf.saxon.TransformerFactoryImpl");
@@ -44,7 +49,8 @@ public class blog extends HttpServlet {
     * @param res The HTTP response
     */
 
-    public void service(HttpServletRequest req, HttpServletResponse res)
+    @Override
+	public void service(HttpServletRequest req, HttpServletResponse res)
 	throws ServletException, IOException
     {
         
@@ -67,7 +73,8 @@ public class blog extends HttpServlet {
     * Required by Servlet interface
     */
 
-    public String getServletInfo() {
+    @Override
+	public String getServletInfo() {
         return "Calls Saxon to apply a schema-aware stylesheet to a source document";
     }
 
