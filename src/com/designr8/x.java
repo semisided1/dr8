@@ -20,7 +20,7 @@ import java.util.Enumeration;
 import java.util.HashMap;
 
 
-public class Dr8Servlet extends HttpServlet {
+public class x extends HttpServlet {
 
     
 	/**
@@ -55,16 +55,21 @@ public class Dr8Servlet extends HttpServlet {
     {
         
         String title = req.getParameter("title");
-        String xsl = "";
+        String xsl = "/" + req.getParameter("xsl") + ".xsl";    
+        String xml = "/" + req.getParameter("xml") + ".xml";
         
-        String xml = "";
+        if (xsl.compareTo("/null.xsl") == 0 ) {
+        	xsl = "/bloglist.xsl";
+        	xml = "/atom.xml";
+        }
+        
         String clear = req.getParameter("clear-stylesheet-cache");
 
         if (clear!=null && clear.equals("yes")) {
             clearCache();
         }
        
-        apply(title,"/bloglist.xsl","/atom.xml", req, res);
+        apply(title,xsl,xml,req, res);
 
     }
 

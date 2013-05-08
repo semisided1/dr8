@@ -15,7 +15,7 @@ div.atomentry {
 	float:left;
 	padding-top:1em;
 	padding-left:.5em;
-	width:13em;
+	width:15em;
 	height: 20em;
 	overflow: hidden;
 }
@@ -24,6 +24,7 @@ img.thumb {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 div.thumbdiv {
 	height: 10em;
 	display: block;

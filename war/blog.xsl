@@ -7,6 +7,8 @@
 	xmlns:fb="http://ogp.me/ns/fb#"
 	exclude-result-prefixes="xhtml"
 	>
+<xsl:include href="footer.xsl"/>	
+	
 <!-- <xsl:output doctype="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/> --> 
 <xsl:param name="title" />
 <xsl:template match="atom:feed">  <!-- match feed xmlns="http://www.w3.org/1999/xhtml" -->
@@ -48,113 +50,8 @@
 				</h1>
 				
 			</div>
-			<div class="colmask rightmenu">
-		<div class="colleft">
-			<div class="col1wrap">
-				<div class="col1">
-			
 				<xsl:apply-templates />
-		</div>
-				<!-- col1  -->
-			</div>
-			<!-- colwrap -->
-		
-		<!-- colleft -->
-
-		<div class="col2">
-		<ul>
-		<li><a href="https://github.com/semisided1">GitHub Profile</a></li>
-		<li><a href="https://plus.google.com/u/0/118134990318051975731">G+ Profile</a></li>
-		<li><a href="http://semisided1.deviantart.com/">Devian Art Profile</a></li>
-		<li><a href="https://www.facebook.com/pages/Designr8com/154274654593875">Designr8 on Facebook</a></li>
-		<li><a href="https://twitter.com/semisided1">Darrell on Twitter</a></li>
-		<li><a href="https://www.facebook.com/dirtslayer">Darrell on Facebook</a></li>
-		</ul>
-		<ul>
-		<li>Sites by Designr8</li>
-		<li><a href="http://www.stevenlaytonsphotography.ca/">stevenlaytonsphotography.ca</a></li>
-		<li><a href="http://www.eclecticshots.com/">electicshots.com</a></li>
-		<li><a href="http://www.snowbgone.ca/">snowbgone.ca</a></li>
-		<li><a href="http://callpaulbobcat.com/">callpaulbobcat.com</a></li>
-		 	
-		 	<li><a href="http://bestchoiceentertainment.ca/">bestchoiceentertainment.ca</a></li>
-		</ul>
-	<!--	<script type="text/javascript">
-google_ad_client = "ca-pub-7326905713177295";
-/* slayton */
-google_ad_slot = "9273749359";
-google_ad_width = 200;
-google_ad_height = 200;
-//
-</script> -->
-
-
-<div class="ad">
-	<script type="text/javascript">
-		<xsl:comment>
-			google_ad_client = "ca-pub-7326905713177295";
-			/* designr8 */
-			google_ad_slot = "1639107101";
-			google_ad_width = 250;
-			google_ad_height = 250;
-			//
-		</xsl:comment>
-	</script>
-	<script type="text/javascript"
-		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-	</script>
-</div>
-	<div class="ad">
-		<script type="text/javascript">
-			<xsl:comment>
-				google_ad_client = "ca-pub-7326905713177295";
-				/* designr8 two */
-				google_ad_slot = "1577198311";
-				google_ad_width = 250;
-				google_ad_height = 250;
-				//
-			</xsl:comment>
-		</script>
-		<script type="text/javascript"
-			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-		</script>
-	</div>
-
-
-</div>
-	</div>
-	</div>
-	<div id="footer">
-	
-	
-	<p>Designr8.com 2012</p>
-	
-	<div id="fb-root"></div>
-		<script>
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id))
-					return;
-				js = d.createElement(s);
-				js.id = id;
-				js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
-		<fb:like send="true"
-			width="15em" show_faces="false"></fb:like>
-		<div class="g-plusone" data-annotation="inline"></div>
-		<script type="text/javascript">
-			(function() {
-				var po = document.createElement('script');
-				po.type = 'text/javascript';
-				po.async = true;
-				po.src = 'https://apis.google.com/js/plusone.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(po, s);
-			})();
-		</script>
-	</div>
+	<xsl:call-template name="footer"></xsl:call-template>	
 	</body>		
 	</html>
 </xsl:template>
@@ -165,13 +62,17 @@ google_ad_height = 200;
 			<p>
 				<xsl:value-of select="atom:updated" />
 			</p>
+			<div class="content">
 			<xsl:apply-templates />
+			</div>
 		</xsl:when>
 	</xsl:choose>
 </xsl:template>
 
 <xsl:template match="atom:feed/atom:entry/xhtml:content/*">
+	
 	<xsl:copy-of select="." copy-namespaces="no" />
+	
 </xsl:template>
 	
 <xsl:template match="text()" />

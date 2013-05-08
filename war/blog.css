@@ -40,7 +40,10 @@ img.thumb {
 	padding: 1em;
 }
 
-
+div.content {
+	margin:1em;
+	color:blue;
+}
 
 .current {
 	color: red;
