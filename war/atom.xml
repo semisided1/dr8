@@ -16,7 +16,129 @@
   <category term="Linux"/>
   <category term="Software" ></category>
  
+ <entry>
+ <title>My latest desktop incarnation, using jackd with kde</title>    
+ <link href="http://www.designr8.com/blog?title=My latest desktop incarnation, using jackd with kde"></link> 
+ <id>http://www.designr8.com/blog?title=My latest desktop incarnation, using jackd with kde</id>
+ <summary>jackd setup with kde</summary>
+ <updated>Thu May  9 13:16:11 MDT 2013</updated>
+ <category>linux</category>
+ <thumbnail>https://lh6.googleusercontent.com/-mbv08QAEocQ/UYv7ft1IyuI/AAAAAAAAG3I/wztW4LtJL3Q/s200/linux-penguin-icon-370x229.jpg</thumbnail>
+ <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <img src="https://lh6.googleusercontent.com/-wHcT3Q5NpQw/UYwAqy4GnuI/AAAAAAAAG3U/aGtWsD3P4Hc/s640/IMAG0307.jpg" />
+  <p>acorn masterkey 49 midi controller, akai mpd18 compact pad controller</p>
+  <p>I always looking to try something new. I have been having problems with my Arch Linux install. D-Bus was crashing at least once an hour, it was becomming horibly inconvient, then I issued a pacman -Syu (system upgrade), and wasnt able to login anymore. This was really messed up actually, I got a login prompt but it never asked me for my password. Anyway, I didnt have a arch install image on my data key so I thought I would try something else. I did have a debian install image, so I am back with debian.
+       </p>
+      <p>
+          One difference this time around is that I have had enough with gnome. Sorry, I can not take it anymore. Pulse audio does not work well enough with midi applications, that I need. I have installed kde and disabled kmix on the startup and created a shell script to start jackd.
+      </p>
+      <p>
+          there is no guarantee what device will be first in alsa so we have to use the hardware device name when starting jackd.
+      </p>
+  		<p>reference: <a href="http://james.ahlstrom.name/alsa_names.html" >http://james.ahlstrom.name/alsa_names.html</a></p>
+  		<h2>Step 0. Remove pulse audio</h2>
+  		<code><pre>
+#aptitude remove pulse
+#alsactl init
+  		</pre></code>
+  		<h2>Step 1. Determine the name of your output sound card using aplay -l</h2>
+  		<code><pre>
+darrell@debdd:~$ aplay -l
+
+**** List of PLAYBACK Hardware Devices ****
+card 0: PCH [HDA Intel PCH], device 0: ALC892 Analog [ALC892 Analog]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 1: ALC892 Digital [ALC892 Digital]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 3: CA0106 [CA0106], device 0: ca0106 [CA0106]
+  Subdevices: 0/1
+  Subdevice #0: subdevice #0
+card 3: CA0106 [CA0106], device 1: ca0106 [CA0106]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 3: CA0106 [CA0106], device 2: ca0106 [CA0106]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 3: CA0106 [CA0106], device 3: ca0106 [CA0106]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 4: NVidia [HDA NVidia], device 3: HDMI 0 [HDMI 0]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 4: NVidia [HDA NVidia], device 7: HDMI 0 [HDMI 0]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 4: NVidia [HDA NVidia], device 8: HDMI 0 [HDMI 0]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 4: NVidia [HDA NVidia], device 9: HDMI 0 [HDMI 0]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0</pre></code>
+  		<p>
+  		    There may be quite a few choices, I have 2 soundcards and a hdmi out, so there are many choices. I use CA0106, its a pci card that is soundblaster compatable (i think). So this is the name of my soundcard.
+  		</p>
+  <h2>Step 2. Create a script to start jackd </h2>
+  <code><pre>
+darrell@debdd:~$ cat startjackd.sh
+      
+#!/bin/sh
+
+exec jackd -R -d alsa -d hw:CA0106</pre></code>
+  <p> I just use the default settings and i have found that this works best. Change hw:CA0106 to the name of your card determined in step 1. hw:0 or hw:1 can be problematic.</p>
  
+ <h2>Step 3. Start jackd on startup of X</h2>
+ <img src="https://lh6.googleusercontent.com/-ZGgS2atI0qE/UYvwacnRCeI/AAAAAAAAG1A/DIftnxSlBrU/s640/kde-jackd-startup.png" />
+ <p>this will be different depending on your desktop environment, but i recomend something that does not require pulse to start with anyway. i use kde. you could also use your .xinitrc if that file is used on your startup.</p>
+ <h2>Step 4. .asoundrc magic</h2>
+ <p>i can not explain this better than what is out there, being less than an expert i just used what works. I have tried hw:0 and hw:1 in the mixer section and havent figured out if it makes a difference. if you google search: use jackd with flash plugin, you will get this... here is the ~/.asoundrc</p>
+ <code><pre>
+darrell@debdd:~$ cat .asoundrc
+     
+pcm.!default {
+type plug
+slave { pcm "jack" }
+}
+
+ctl.mixer0 {
+type hw
+card 0
+}
+
+# pcm type jack
+pcm.jack {
+type jack
+playback_ports {
+0 system:playback_1
+1 system:playback_2
+}
+capture_ports {
+0 system:capture_1
+1 system:capture_2
+}
+}
+     
+ </pre></code>
+ 
+ <h2>Step 5. Tell your desktop to use jack instead of directly to alsa</h2>
+ <img src="https://lh5.googleusercontent.com/-bv-BmdRu6C8/UYvwSCctw2I/AAAAAAAAG04/lhPRBitXb0I/s640/kde-jackd-phonon.png" />
+ <p>System Settings, Multimedia, Phonon. Find the device named jack and click prefer until it is at the top. Test by loging out and loging back in. Oops, I have Music selected here, but should be Audio Playback, then click Apply Device List To ... and select all.</p>
+ 
+ <h2>Step 6. QJackctl to attach midi devices</h2>
+ <p>there are a bunch of youtube videos out there for this. when you run qjackctrl with this setup we are using a jackd that has already been started. so the start button should be disabled. if it isnt, well, you probably did not have sound in your test last step. you can double check jackd is running with:</p>
+ <code><pre>
+     $ ps aux | grep jackd
+ </pre></code>
+ <p>then click connect in qjackctl to connect your midi devices to the sythesizer applications ... in this case i am connecting my keyboard to zynaddsubfx and my drum pad to hydrogen</p>
+	<a href="https://lh6.googleusercontent.com/-j6zPzUMBCp0/UYvwdSKpweI/AAAAAAAAG1I/bynsFeC2lcI/s1440/kde-jackd-qjackctl.png" >
+ <img src="https://lh6.googleusercontent.com/-j6zPzUMBCp0/UYvwdSKpweI/AAAAAAAAG1I/bynsFeC2lcI/s640/kde-jackd-qjackctl.png" /> </a>
+ <p>Enjoy your music!</p>
+ </content>
+ </entry>
+  
+  
+  
  <entry>
  <title>horses without fences at nordegg</title>
  <link href="http://www.designr8.com/blog?title=horses without fences at nordegg"></link> 
