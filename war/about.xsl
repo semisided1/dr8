@@ -10,6 +10,19 @@
  	<xsl:template match="/">
 	
 		<xsl:call-template name="header"></xsl:call-template>
+		
+		<p>
+		Darrell Dupas lives and works in Redwater, AB, CA. He has a focus on the arts and considers
+		computers a big part of modern art. Database programming and system repairs may seem a long
+		way from art to most, but not at designr8.com. Making a computer work for you is rewarding
+		in its own way and requires discipline.
+		</p>
+		<p>
+		Designr8 specializes in database software, desktop or internet based. We have experience with J2EE, LAMP,
+		Microsoft Office and XML. We are unbiased towards technology and willing to dabble in anything.
+		</p>
+		
+		<h2>Social Media Footprint</h2>
 			
 		<ul>
 								<li>
@@ -30,7 +43,7 @@
 								
 							</ul>
 							<ul>
-								<li>Sites by Designr8</li>
+								<li>Online websites by Designr8</li>
 								<li>
 									<a href="http://www.stevenlaytonsphotography.ca/">stevenlaytonsphotography.ca</a>
 								</li>
@@ -43,8 +56,6 @@
 								<li>
 									<a href="http://callpaulbobcat.com/">callpaulbobcat.com</a>
 								</li>
-
-								
 							</ul>
 		<xsl:call-template name="footer" />
 	</xsl:template>

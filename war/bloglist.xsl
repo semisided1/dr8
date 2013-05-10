@@ -35,11 +35,12 @@
 <!-- 	</xsl:template> -->
 
 	<xsl:template match="atom:feed/atom:entry">
-		<div class="atomentry">
-			<xsl:element name="a">
+	<xsl:element name="a">
 				<xsl:attribute name="href">
 			    <xsl:value-of select="atom:id" />
 			    </xsl:attribute>
+		<div class="atomentry">
+			
 			    
 			    
 			    <div class="thumbdiv">
@@ -55,7 +56,7 @@
 			    
 				<xsl:value-of select="atom:title" />
 				
-			</xsl:element>
+			
 			
 			
 			<div class="atomupdated">
@@ -68,6 +69,7 @@
 			
 
 		</div>
+		</xsl:element>
 		<xsl:apply-templates />
 	</xsl:template>
 

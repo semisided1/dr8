@@ -19,6 +19,10 @@ div.atomentry {
 	height: 20em;
 	overflow: hidden;
 }
+div.atomentry:hover {
+	background: #FFA858;
+	text-decoration: none;
+}
 img.thumb {
 	display: block;
 	margin-left: auto;
@@ -34,14 +38,12 @@ div.atomupdated {
 	font-size:75%;
 }
 a {
-	color: #369;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #fff;
-	background: #369;
-	text-decoration: none;
 }
+
 h1,h2,h3 {
 	margin: .8em 0 .2em 0;
 	padding: 0;
