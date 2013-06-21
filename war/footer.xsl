@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml"
-	xmlns:fb="http://ogp.me/ns/fb#" exclude-result-prefixes="xhtml">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:fb="http://ogp.me/ns/fb#" 
+	exclude-result-prefixes="xhtml xsl atom"
+	>
 	
 	<xsl:template name="footer">
 
 		<div id="footer">
-					<p><a href="/x?xsl=about&amp;xml=designr8" >About Designr8.com</a></p>
+					<p><a href="/"> Designr8.com </a> </p>
+					<p><a href="/x?xsl=about&amp;xml=designr8" >About </a></p>
 					<div id="fb-root"></div>
 					<script>
 						(function(d, s, id) {

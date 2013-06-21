@@ -1,0 +1,42 @@
+body {
+	margin: 3em;
+	padding: 0;
+	border: 0;
+	/* This removes the border around the viewport in old versions of IE */
+	background: #fff;
+	
+	/* Minimum width of layout - remove line if not required */
+	/* The min-width property does not work in old versions of Internet Explorer */
+	font-size: 125%;
+	font-family: 'Old Standard TT', serif;
+}
+
+
+img#octocat {
+	float : none;
+	clear : right;
+	width: 100px;
+}
+div.social {
+	width : 300px;
+	max-width: 300px;
+	margin: 20px;
+	float : left;
+}
+h2 {
+	clear : both;
+}
+ul {
+	list-style: none;
+
+	}
+
+a { 
+	clear: both;
+	margin : 1em;
+
+}
+img {
+	float: left;
+	clear: right;
+}

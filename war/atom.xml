@@ -15,7 +15,53 @@
   <category term="Technology" />
   <category term="Linux"/>
   <category term="Software" ></category>
+  
+  <entry>
+      <title>boredealis doodle</title>
+      <link href="http://www.designr8.com/blog?title=boredealis doodle"></link>
+      <id>http://www.designr8.com/blog?title=boredealis doodle</id>
+      <summary>never give up</summary>
+      <updated>Tue Jun  4 01:07:53 MDT 2013</updated>
+      <category>Paint</category>
+      <thumbnail>https://lh4.googleusercontent.com/-Q9iqdn1r7H8/Ua2T7Qj7vNI/AAAAAAAAG8Y/RQUvPi-QlgY/s200/boredealis.png</thumbnail>
+      <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+          <img src="https://lh4.googleusercontent.com/-Q9iqdn1r7H8/Ua2T7Qj7vNI/AAAAAAAAG8Y/RQUvPi-QlgY/w729-h584-no/boredealis.png" />
+          <p>Never give up!</p>
+          <p>Markup is not the same as programming ... </p> 
+		  <p>hanging out way late at night avoiding crack head aliens and more battles for wesnoth ... 
+		      just trying to not waste time.</p>	
+          
+      </content>
+  </entry>
+  
+  
  
+  <entry>
+      <title>php chat</title>
+      <link href="http://www.designr8.com/blog?title=php chat"></link>
+      <id>http://www.designr8.com/blog?title=php chat</id>
+      <summary>an online chat program that uses php5, php-xsl, jquery </summary>
+      <updated>Fri May 10 14:23:18 MDT 2013</updated>
+      <category>internet</category>
+      <category>programming</category>
+      <thumbnail>http://callpaulbobcat.com/phpchat/gfx/jquery.png</thumbnail>
+      <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+      <img src="http://callpaulbobcat.com/phpchat/gfx/php.png"  ></img>
+      <img src="http://callpaulbobcat.com/phpchat/gfx/xsl.png"   ></img>
+      <img src="http://callpaulbobcat.com/phpchat/gfx/jquery.png"></img>
+      <p>this is a little chat program i used to learn jquery</p>
+      <p>it uses some interesting techniques, it is what we call RESTful</p>
+      <p>there is not push on the internet really, everything is pulled from a server. So 
+          RESTful applications pull a token that indicates if an update of the entire dataset is
+          required. JQuery is very useful for this purpose because it can pull only parts of a page.</p>
+          <p>not sure why i named it php chat, php does very little in this application, most of the
+              heavy lifting is done by libxml and jquery</p>
+       <p><a href="http://callpaulbobcat.com/phpchat/">php chat!</a></p>
+      
+      </content>
+  </entry>
+  
+  
  <entry>
  <title>My latest desktop incarnation, using jackd with kde</title>    
  <link href="http://www.designr8.com/blog?title=My latest desktop incarnation, using jackd with kde"></link> 
