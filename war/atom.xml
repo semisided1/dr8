@@ -17,6 +17,78 @@
   <category term="Software" ></category>
   
   <entry>
+      <title>saxon-he on appengine</title>
+      <link href="http://www.designr8.com/blog?title=saxon-he on appengine"></link>
+      <id>http://www.designr8.com/blog?title=saxon-he on appengine</id>
+      <summary>using xslt with saxon on google appengine</summary>
+      <updated>Fri Jun 21 15:36:31 MDT 2013</updated>
+      <category>java</category>
+      <category>xml</category>
+      <category>web</category>
+      <thumbnail>https://lh6.googleusercontent.com/-uHzQYpwAWrQ/UcTN7YiNajI/AAAAAAAAHGA/ZE7WtW3y76U/xslt.jpg</thumbnail>
+      <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    
+          <h2>Using saxon-he on appengine</h2>
+	<p>saxon-he is an xslt library for java. it is a very good xslt implementation.</p>
+	<ol> Steps 
+	<li> download the zip file from sourceforge and unzip it
+	</li>
+	<li> open saxon9he.jar in ark or 7zip and delete the file META-INF/MANIFEST.MF
+	
+	</li>
+	<li> in a appengine web project copy the jar file into your lib folder - probably something like:
+	/home/yourname/workspace/projectname/war/WEB-INF/lib
+	
+	</li>
+	<li> add jar to your java build path by selecting the project in package explorer, properties, 
+		java build path, add jar
+	</li>
+	<li>
+		create a general purpose transformer by copying SaxonSAServlet.java from saxon-resourcesX-X.zip
+		(here is a link to my altered version: <a href= "https://github.com/semisided1/dr8/blob/master/src/com/designr8/x.java">x.java </a> )
+	</li>
+	<li> create an xml and xsl file put them in your war folder. <a href="https://github.com/semisided1/dr8/tree/master/war">
+	designr8 war folder</a>
+	</li>
+	<li>
+	   use the transformer, here is a url to the class called x, which is my copy of saxonsaservlet.java
+	   <pre>
+	   <code>
+	   http://www.designr8.com/x?xsl=about&amp;xml=designr8
+	   
+	   http://localhost:8888/x?xsl=about&amp;xml=designr8&amp;clear-stylesheet-cache=yes
+	   </code>
+	   </pre>
+	 </li>
+	 </ol>
+	 
+	<ol> Visual Aids
+	<li>
+	</li>
+	<li> <img src="https://lh4.googleusercontent.com/-voyjWSRROgY/UcTGW7L12lI/AAAAAAAAHFo/O3ZE7jhFWZw/w648-h516-no/02+remove+manifest.png" />
+	</li>
+	<li> <img src="https://lh6.googleusercontent.com/-UhcxlUksewo/UcTGPLQbZtI/AAAAAAAAHFU/a98qctV2yog/w913-h390-no/03+copy+jar.png" />
+	</li>
+	<li> <img src="https://lh3.googleusercontent.com/-bSCzZuhwBG8/UcTGWOqr96I/AAAAAAAAHFg/qAqv8a7ls40/w1004-h377-no/04+add+jar+to+java+build+path.png" />
+	</li>
+	<li> <img src="https://lh3.googleusercontent.com/-6BQjLmaWuPk/UcTGYefp-gI/AAAAAAAAHFw/2vsIGJpG4yU/w689-h532-no/05+get+saxonsaservlet.png" />
+	</li>
+	<li>
+	</li>
+	<li>
+	</li>
+	
+	
+	
+	</ol>   
+		
+          
+          
+    </content>  
+  </entry>
+  
+  
+  <entry>
       <title>boredealis doodle</title>
       <link href="http://www.designr8.com/blog?title=boredealis doodle"></link>
       <id>http://www.designr8.com/blog?title=boredealis doodle</id>
