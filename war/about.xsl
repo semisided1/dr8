@@ -21,7 +21,12 @@
 
 
 				<xsl:call-template name="header"></xsl:call-template>
-
+				
+				<div class="qr-code" >	
+				<img class="qr-code" src="https://lh6.googleusercontent.com/-Hawr2dOmdcU/UciRP8Wy17I/AAAAAAAAHIg/TgQTwPN4PsU/w300/QR+Contact+Card+-+1" />
+				<p>QR Contact Card</p>
+				</div>
+				
 				<p>
 					Darrell Dupas lives and works in Redwater, AB, CA.
 				</p>

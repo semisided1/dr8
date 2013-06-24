@@ -17,6 +17,17 @@ img#octocat {
 	clear : right;
 	width: 100px;
 }
+
+img.qr-code {
+	float: right;
+}
+div.qr-code {
+	float:right;
+	width : 300px;
+	margin: 20px;
+}
+
+
 div.social {
 	width : 300px;
 	max-width: 300px;
