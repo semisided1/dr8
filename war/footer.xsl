@@ -12,6 +12,9 @@
 		<div id="footer">
 					<p><a href="/"> Designr8.com </a> </p>
 					<p><a href="/x?xsl=about&amp;xml=designr8" >About </a></p>
+					<p><a href="http://feedvalidator.org/check.cgi?url=http%3A//designr8.com/atom.xml"><img src="https://lh6.googleusercontent.com/-XL4ZdVa9P-g/UcvsLPM_GrI/AAAAAAAAHKE/mdKakaFqQqw/w88-h31-no/valid-atom.png" alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></p>
+					<p><a type="application/atom+xml" href="/atom.xml">Atom Feed</a></p>
+					
 					<div id="fb-root"></div>
 					<script>
 						(function(d, s, id) {

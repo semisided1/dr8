@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" >
-<id>http://www.designr8.com/blog/atom.xml</id>
+<feed 
+    xmlns="http://www.w3.org/2005/Atom" 
+   
+    xmlns:media="http://search.yahoo.com/mrss/">
+	
   <title>Designr8.com Blog</title>
-  <updated>Sat Nov 12 22:24:59 MST 2011</updated>
+  <subtitle>Darrell's paintings, food tips and tech thoughts</subtitle>
+  
+  <link rel="self" href="http://designr8.com/atom.xml"/>
+  <link href="http://www.designr8.com"/>
+  
+  
+  
+  <updated>2013-06-27T02:28:29-06:00</updated>
   <author>
     <name>Darrell Dupas</name>
     <email>darrell@designr8.com</email>
-    <uri>http://designr8.com/blog/atom.xml</uri>
+    <uri>http://designr8.com</uri>
   </author>
-  <link rel="self" href="http://designr8.com/blog/atom.xml"/>
+ 
   <icon>http://www.designr8.com/favicon.ico</icon>
   <logo>http://www.designr8.com/logo.png</logo>
-  <category term="Computers" />
-  <category term="Technology" />
-  <category term="Linux"/>
-  <category term="Software" ></category>
+  
+  <id>http://www.designr8.com/</id>
+  
   
   <entry>
       <title>saxon-he on appengine</title>
-      <link href="http://www.designr8.com/blog?title=saxon-he on appengine"></link>
-      <id>http://www.designr8.com/blog?title=saxon-he on appengine</id>
-      <summary>using xslt with saxon on google appengine</summary>
-      <updated>Fri Jun 21 15:36:31 MDT 2013</updated>
-      <category>java</category>
-      <category>xml</category>
-      <category>web</category>
-      <thumbnail>https://lh6.googleusercontent.com/-uHzQYpwAWrQ/UcTN7YiNajI/AAAAAAAAHGA/ZE7WtW3y76U/xslt.jpg</thumbnail>
-      <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+      <link href="http://www.designr8.com/blog?title=saxon-he%20on%20appengine"/>
+      <id>http://www.designr8.com/blog?title=saxon-he%20on%20appengine</id>
+      <summary type="html"> using xslt with saxon on google appengine
+          </summary>
+      <updated>2013-06-21T15:36:31-07:00</updated>
+      
+      <category term="/xml" label="xml"/>
+      <category term="/java" label="java"/>
+      
+      <media:thumbnail url="https://lh6.googleusercontent.com/-uHzQYpwAWrQ/UcTN7YiNajI/AAAAAAAAHGA/ZE7WtW3y76U/xslt.jpg"/>
+    <content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
     
           <h2>Using saxon-he on appengine</h2>
 	<p>saxon-he is an xslt library for java. it is a very good xslt implementation.</p>
@@ -45,7 +57,7 @@
 	</li>
 	<li>
 		create a general purpose transformer by copying SaxonSAServlet.java from saxon-resourcesX-X.zip
-		(here is a link to my altered version: <a href= "https://github.com/semisided1/dr8/blob/master/src/com/designr8/x.java">x.java </a> )
+		(here is a link to my altered version: <a href="https://github.com/semisided1/dr8/blob/master/src/com/designr8/x.java">x.java </a> )
 	</li>
 	<li> create an xml and xsl file put them in your war folder. <a href="https://github.com/semisided1/dr8/tree/master/war">
 	designr8 war folder</a>
@@ -63,20 +75,20 @@
 	 </ol>
 	 
 	<ol> Visual Aids
-	<li>
+	<li/>
+	
+	<li> <img src="https://lh4.googleusercontent.com/-voyjWSRROgY/UcTGW7L12lI/AAAAAAAAHFo/O3ZE7jhFWZw/w648-h516-no/02+remove+manifest.png"/>
 	</li>
-	<li> <img src="https://lh4.googleusercontent.com/-voyjWSRROgY/UcTGW7L12lI/AAAAAAAAHFo/O3ZE7jhFWZw/w648-h516-no/02+remove+manifest.png" />
+	<li> <img src="https://lh6.googleusercontent.com/-UhcxlUksewo/UcTGPLQbZtI/AAAAAAAAHFU/a98qctV2yog/w913-h390-no/03+copy+jar.png"/>
 	</li>
-	<li> <img src="https://lh6.googleusercontent.com/-UhcxlUksewo/UcTGPLQbZtI/AAAAAAAAHFU/a98qctV2yog/w913-h390-no/03+copy+jar.png" />
+	<li> <img src="https://lh3.googleusercontent.com/-bSCzZuhwBG8/UcTGWOqr96I/AAAAAAAAHFg/qAqv8a7ls40/w1004-h377-no/04+add+jar+to+java+build+path.png"/>
 	</li>
-	<li> <img src="https://lh3.googleusercontent.com/-bSCzZuhwBG8/UcTGWOqr96I/AAAAAAAAHFg/qAqv8a7ls40/w1004-h377-no/04+add+jar+to+java+build+path.png" />
+	<li> <img src="https://lh3.googleusercontent.com/-6BQjLmaWuPk/UcTGYefp-gI/AAAAAAAAHFw/2vsIGJpG4yU/w689-h532-no/05+get+saxonsaservlet.png"/>
 	</li>
-	<li> <img src="https://lh3.googleusercontent.com/-6BQjLmaWuPk/UcTGYefp-gI/AAAAAAAAHFw/2vsIGJpG4yU/w689-h532-no/05+get+saxonsaservlet.png" />
-	</li>
-	<li>
-	</li>
-	<li>
-	</li>
+	<li/>
+	
+	<li/>
+	
 	
 	
 	
@@ -84,43 +96,51 @@
 		
           
           
-    </content>  
+    </div>
+</content>  
   </entry>
   
   
   <entry>
       <title>boredealis doodle</title>
-      <link href="http://www.designr8.com/blog?title=boredealis doodle"></link>
-      <id>http://www.designr8.com/blog?title=boredealis doodle</id>
+      <link href="http://www.designr8.com/blog?title=boredealis%20doodle"/>
+      <id>http://www.designr8.com/blog?title=boredealis%20doodle</id>
       <summary>never give up</summary>
-      <updated>Tue Jun  4 01:07:53 MDT 2013</updated>
-      <category>Paint</category>
-      <thumbnail>https://lh4.googleusercontent.com/-Q9iqdn1r7H8/Ua2T7Qj7vNI/AAAAAAAAG8Y/RQUvPi-QlgY/s200/boredealis.png</thumbnail>
-      <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-          <img src="https://lh4.googleusercontent.com/-Q9iqdn1r7H8/Ua2T7Qj7vNI/AAAAAAAAG8Y/RQUvPi-QlgY/w729-h584-no/boredealis.png" />
+      <updated>2013-06-04T01:07:53-07:00</updated>
+      
+        <category term="/paint" label="paint"/>
+      
+      <media:thumbnail url="https://lh4.googleusercontent.com/-Q9iqdn1r7H8/Ua2T7Qj7vNI/AAAAAAAAG8Y/RQUvPi-QlgY/s200/boredealis.png"/>
+    <content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
+          <img src="https://lh4.googleusercontent.com/-Q9iqdn1r7H8/Ua2T7Qj7vNI/AAAAAAAAG8Y/RQUvPi-QlgY/w729-h584-no/boredealis.png"/>
           <p>Never give up!</p>
           <p>Markup is not the same as programming ... </p> 
 		  <p>hanging out way late at night avoiding crack head aliens and more battles for wesnoth ... 
 		      just trying to not waste time.</p>	
           
-      </content>
+      </div>
+</content>
   </entry>
   
   
  
   <entry>
       <title>php chat</title>
-      <link href="http://www.designr8.com/blog?title=php chat"></link>
-      <id>http://www.designr8.com/blog?title=php chat</id>
+      <link href="http://www.designr8.com/blog?title=php%20chat"/>
+      <id>http://www.designr8.com/blog?title=php%20chat</id>
       <summary>an online chat program that uses php5, php-xsl, jquery </summary>
-      <updated>Fri May 10 14:23:18 MDT 2013</updated>
-      <category>internet</category>
-      <category>programming</category>
-      <thumbnail>http://callpaulbobcat.com/phpchat/gfx/jquery.png</thumbnail>
-      <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-      <img src="http://callpaulbobcat.com/phpchat/gfx/php.png"  ></img>
-      <img src="http://callpaulbobcat.com/phpchat/gfx/xsl.png"   ></img>
-      <img src="http://callpaulbobcat.com/phpchat/gfx/jquery.png"></img>
+      <updated>2013-05-10T14:23:18-07:00</updated>
+      
+        <category term="/xml" label="xml"/>
+          <category term="/jquery" label="jquery"/>
+            
+      <media:thumbnail url="http://callpaulbobcat.com/phpchat/gfx/jquery.png"/>
+    <content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
+      <img src="http://callpaulbobcat.com/phpchat/gfx/php.png"/>
+      <img src="http://callpaulbobcat.com/phpchat/gfx/xsl.png"/>
+      <img src="http://callpaulbobcat.com/phpchat/gfx/jquery.png"/>
       <p>this is a little chat program i used to learn jquery</p>
       <p>it uses some interesting techniques, it is what we call RESTful</p>
       <p>there is not push on the internet really, everything is pulled from a server. So 
@@ -128,22 +148,31 @@
           required. JQuery is very useful for this purpose because it can pull only parts of a page.</p>
           <p>not sure why i named it php chat, php does very little in this application, most of the
               heavy lifting is done by libxml and jquery</p>
-       <p><a href="http://callpaulbobcat.com/phpchat/">php chat!</a></p>
+       <p>
+<a href="http://callpaulbobcat.com/phpchat/">php chat!</a>
+</p>
       
-      </content>
+      </div>
+</content>
   </entry>
   
   
  <entry>
- <title>My latest desktop incarnation, using jackd with kde</title>    
- <link href="http://www.designr8.com/blog?title=My latest desktop incarnation, using jackd with kde"></link> 
- <id>http://www.designr8.com/blog?title=My latest desktop incarnation, using jackd with kde</id>
- <summary>jackd setup with kde</summary>
- <updated>Thu May  9 13:16:11 MDT 2013</updated>
- <category>linux</category>
- <thumbnail>https://lh6.googleusercontent.com/-mbv08QAEocQ/UYv7ft1IyuI/AAAAAAAAG3I/wztW4LtJL3Q/s200/linux-penguin-icon-370x229.jpg</thumbnail>
- <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <img src="https://lh6.googleusercontent.com/-wHcT3Q5NpQw/UYwAqy4GnuI/AAAAAAAAG3U/aGtWsD3P4Hc/s640/IMAG0307.jpg" />
+ <title>jackd</title>    
+ <link href="http://www.designr8.com/blog?title=jackd"/> 
+ <id>http://www.designr8.com/blog?title=jackd</id>
+ <summary>jackd setup</summary>
+ <updated>2013-05-09T13:16:11-07:00</updated>
+ 
+ 
+   <category term="/linux" label="linux"/>
+ 
+ 
+ <media:thumbnail url="https://lh6.googleusercontent.com/-mbv08QAEocQ/UYv7ft1IyuI/AAAAAAAAG3I/wztW4LtJL3Q/s200/linux-penguin-icon-370x229.jpg"/>
+ 
+ <content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+ 
+     <img src="https://lh6.googleusercontent.com/-wHcT3Q5NpQw/UYwAqy4GnuI/AAAAAAAAG3U/aGtWsD3P4Hc/s640/IMAG0307.jpg"/>
   <p>acorn masterkey 49 midi controller, akai mpd18 compact pad controller</p>
   <p>I always looking to try something new. I have been having problems with my Arch Linux install. D-Bus was crashing at least once an hour, it was becomming horibly inconvient, then I issued a pacman -Syu (system upgrade), and wasnt able to login anymore. This was really messed up actually, I got a login prompt but it never asked me for my password. Anyway, I didnt have a arch install image on my data key so I thought I would try something else. I did have a debian install image, so I am back with debian.
        </p>
@@ -153,14 +182,18 @@
       <p>
           there is no guarantee what device will be first in alsa so we have to use the hardware device name when starting jackd.
       </p>
-  		<p>reference: <a href="http://james.ahlstrom.name/alsa_names.html" >http://james.ahlstrom.name/alsa_names.html</a></p>
+  		<p>reference: <a href="http://james.ahlstrom.name/alsa_names.html">http://james.ahlstrom.name/alsa_names.html</a>
+</p>
   		<h2>Step 0. Remove pulse audio</h2>
-  		<code><pre>
+  		<code>
+<pre>
 #aptitude remove pulse
 #alsactl init
-  		</pre></code>
+  		</pre>
+</code>
   		<h2>Step 1. Determine the name of your output sound card using aplay -l</h2>
-  		<code><pre>
+  		<code>
+<pre>
 darrell@debdd:~$ aplay -l
 
 **** List of PLAYBACK Hardware Devices ****
@@ -193,25 +226,29 @@ card 4: NVidia [HDA NVidia], device 8: HDMI 0 [HDMI 0]
   Subdevice #0: subdevice #0
 card 4: NVidia [HDA NVidia], device 9: HDMI 0 [HDMI 0]
   Subdevices: 1/1
-  Subdevice #0: subdevice #0</pre></code>
+  Subdevice #0: subdevice #0</pre>
+</code>
   		<p>
   		    There may be quite a few choices, I have 2 soundcards and a hdmi out, so there are many choices. I use CA0106, its a pci card that is soundblaster compatable (i think). So this is the name of my soundcard.
   		</p>
   <h2>Step 2. Create a script to start jackd </h2>
-  <code><pre>
+  <code>
+<pre>
 darrell@debdd:~$ cat startjackd.sh
       
 #!/bin/sh
 
-exec jackd -R -d alsa -d hw:CA0106</pre></code>
+exec jackd -R -d alsa -d hw:CA0106</pre>
+</code>
   <p> I just use the default settings and i have found that this works best. Change hw:CA0106 to the name of your card determined in step 1. hw:0 or hw:1 can be problematic.</p>
  
  <h2>Step 3. Start jackd on startup of X</h2>
- <img src="https://lh6.googleusercontent.com/-ZGgS2atI0qE/UYvwacnRCeI/AAAAAAAAG1A/DIftnxSlBrU/s640/kde-jackd-startup.png" />
+ <img src="https://lh6.googleusercontent.com/-ZGgS2atI0qE/UYvwacnRCeI/AAAAAAAAG1A/DIftnxSlBrU/s640/kde-jackd-startup.png"/>
  <p>this will be different depending on your desktop environment, but i recomend something that does not require pulse to start with anyway. i use kde. you could also use your .xinitrc if that file is used on your startup.</p>
  <h2>Step 4. .asoundrc magic</h2>
  <p>i can not explain this better than what is out there, being less than an expert i just used what works. I have tried hw:0 and hw:1 in the mixer section and havent figured out if it makes a difference. if you google search: use jackd with flash plugin, you will get this... here is the ~/.asoundrc</p>
- <code><pre>
+ <code>
+<pre>
 darrell@debdd:~$ cat .asoundrc
      
 pcm.!default {
@@ -237,61 +274,76 @@ capture_ports {
 }
 }
      
- </pre></code>
+ </pre>
+</code>
  
  <h2>Step 5. Tell your desktop to use jack instead of directly to alsa</h2>
- <img src="https://lh5.googleusercontent.com/-bv-BmdRu6C8/UYvwSCctw2I/AAAAAAAAG04/lhPRBitXb0I/s640/kde-jackd-phonon.png" />
+ <img src="https://lh5.googleusercontent.com/-bv-BmdRu6C8/UYvwSCctw2I/AAAAAAAAG04/lhPRBitXb0I/s640/kde-jackd-phonon.png"/>
  <p>System Settings, Multimedia, Phonon. Find the device named jack and click prefer until it is at the top. Test by loging out and loging back in. Oops, I have Music selected here, but should be Audio Playback, then click Apply Device List To ... and select all.</p>
  
  <h2>Step 6. QJackctl to attach midi devices</h2>
  <p>there are a bunch of youtube videos out there for this. when you run qjackctrl with this setup we are using a jackd that has already been started. so the start button should be disabled. if it isnt, well, you probably did not have sound in your test last step. you can double check jackd is running with:</p>
- <code><pre>
+ <code>
+<pre>
      $ ps aux | grep jackd
- </pre></code>
+ </pre>
+</code>
  <p>then click connect in qjackctl to connect your midi devices to the sythesizer applications ... in this case i am connecting my keyboard to zynaddsubfx and my drum pad to hydrogen</p>
-	<a href="https://lh6.googleusercontent.com/-j6zPzUMBCp0/UYvwdSKpweI/AAAAAAAAG1I/bynsFeC2lcI/s1440/kde-jackd-qjackctl.png" >
- <img src="https://lh6.googleusercontent.com/-j6zPzUMBCp0/UYvwdSKpweI/AAAAAAAAG1I/bynsFeC2lcI/s640/kde-jackd-qjackctl.png" /> </a>
+	<a href="https://lh6.googleusercontent.com/-j6zPzUMBCp0/UYvwdSKpweI/AAAAAAAAG1I/bynsFeC2lcI/s1440/kde-jackd-qjackctl.png">
+ <img src="https://lh6.googleusercontent.com/-j6zPzUMBCp0/UYvwdSKpweI/AAAAAAAAG1I/bynsFeC2lcI/s640/kde-jackd-qjackctl.png"/> </a>
  <p>Enjoy your music!</p>
- </content>
+ </div>
+</content>
  </entry>
   
   
   
  <entry>
  <title>horses without fences at nordegg</title>
- <link href="http://www.designr8.com/blog?title=horses without fences at nordegg"></link> 
- <id>http://www.designr8.com/blog?title=horses without fences at nordegg</id>
+ <link href="http://www.designr8.com/blog?title=horses%20without%20fences%20at%20nordegg"/> 
+ <id>http://www.designr8.com/blog?title=horses%20without%20fences%20at%20nordegg</id>
  <summary>planting trees with jamis newsham, stopped for gas in nordegg</summary>
- <updated>Wed Nov 14 01:12:18 MST 2012</updated>
- <category>paint</category>
- <category>alberta</category>
- <thumbnail>https://lh4.googleusercontent.com/-66Kl-Eir9N4/UKNQ57ysMFI/AAAAAAAAFyA/vHeu4d5F-QI/s200/nordeg.png</thumbnail>
- <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
- <img src="https://lh4.googleusercontent.com/-66Kl-Eir9N4/UKNQ57ysMFI/AAAAAAAAFyA/vHeu4d5F-QI/s700/nordeg.png" />
+ <updated>2012-11-14T01:12:18-07:00</updated>
+ 
+ 
+   <category term="/paint" label="paint"/>
+     <category term="/alberta" label="alberta"/>
+ 
+ 
+ 
+ <media:thumbnail url="https://lh4.googleusercontent.com/-66Kl-Eir9N4/UKNQ57ysMFI/AAAAAAAAFyA/vHeu4d5F-QI/s200/nordeg.png"/>
+ 
+ <content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+ <img src="https://lh4.googleusercontent.com/-66Kl-Eir9N4/UKNQ57ysMFI/AAAAAAAAFyA/vHeu4d5F-QI/s700/nordeg.png"/>
  <p>I don't think I should have to justify planting trees for 16 years when you consider what I has 
  given me in return. You can see stopping for gas in nordegg with jamis was a good chance to 
  take a picture with my nintendo ds. </p>
  <p>how was work that day? freaking jamis tried to kill me - i think that was the day we carried 1200 trees each.</p>
  <p>good times</p>
- </content>
+ </div>
+</content>
  </entry>
  
   
 <entry>
 <title>peaceful at dusk</title>
-<link href="http://www.designr8.com/blog?title=peaceful at dusk"></link>
-<id>http://www.designr8.com/blog?title=peaceful at dusk</id>
+<link href="http://www.designr8.com/blog?title=peaceful%20at%20dusk"/>
+<id>http://www.designr8.com/blog?title=peaceful%20at%20dusk</id>
 <summary>landscape painting of smoke lake near fox creek alberta</summary>
-<updated>Mon Nov  5 22:45:30 MST 2012</updated>
-<category>landscape</category>
-<category>painting</category>
-<thumbnail>https://lh6.googleusercontent.com/-NskYPYPZuEA/UJiiMClgGZI/AAAAAAAAFxc/yhTh33caS9Q/s200/smokelake.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh6.googleusercontent.com/-NskYPYPZuEA/UJiiMClgGZI/AAAAAAAAFxc/yhTh33caS9Q/s700/smokelake.png" />
+<updated>2012-11-05T22:45:30-07:00</updated>
+
+  <category term="/paint" label="paint"/>
+    <category term="/alberta" label="alberta"/>
+
+
+<media:thumbnail url="https://lh6.googleusercontent.com/-NskYPYPZuEA/UJiiMClgGZI/AAAAAAAAFxc/yhTh33caS9Q/s200/smokelake.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh6.googleusercontent.com/-NskYPYPZuEA/UJiiMClgGZI/AAAAAAAAFxc/yhTh33caS9Q/s700/smokelake.png"/>
 <p>smoke lake is a very nice place to visit, heard the lake has fish in it</p>
 <p>this painting took about 40 minutes, it was done during another draw and chat hangout</p>
 
 
+</div>
 </content>
 </entry>  
   
@@ -299,15 +351,17 @@ capture_ports {
  
 <entry>
 <title>designr8.com newsletter</title>
-<link href="http://www.designr8.com/blog?title=designr8.com newsletter"></link>
-<id>http://www.designr8.com/blog?title=designr8.com newsletter</id>
+<link href="http://www.designr8.com/blog?title=designr8.com%20newsletter"/>
+<id>http://www.designr8.com/blog?title=designr8.com%20newsletter</id>
 <summary>the reason why i havent been blogging ...</summary>
-<updated>Fri Nov  2 15:16:56 MDT 2012</updated>
-<category>portrait</category>
-<category>appengine</category>
-<thumbnail>https://lh6.googleusercontent.com/-UWcyU1yhVVw/UJQ3XJgTojI/AAAAAAAAFvc/82jRDncZzgU/s200/steven03.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh6.googleusercontent.com/-UWcyU1yhVVw/UJQ3XJgTojI/AAAAAAAAFvc/82jRDncZzgU/s585/steven03.png" />
+<updated>2012-11-02T15:16:56-07:00</updated>
+
+  <category term="/paint" label="paint"/>
+    <category term="/appengine" label="appengine"/>
+
+<media:thumbnail url="https://lh6.googleusercontent.com/-UWcyU1yhVVw/UJQ3XJgTojI/AAAAAAAAFvc/82jRDncZzgU/s200/steven03.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh6.googleusercontent.com/-UWcyU1yhVVw/UJQ3XJgTojI/AAAAAAAAFvc/82jRDncZzgU/s585/steven03.png"/>
 <p>you know you get on a role doing something, then it gets broken up, by hopefully something else equally productive, and 
 it feels good, then after a while you can go back to what it was you where doing before, and you've forgoten a few things, but you 
 find your legs again, then switch again, and of course you've forgotten a few things, but then something happens, it becomes
@@ -359,21 +413,24 @@ a bunch of painting, ... well from the perspective of reading my blog, it looks 
 i was figuring out a few things for topnotchgames.ca -  you can check out the source code on my github</p>
 <p>oh, that painting above, is totally unrelated to this article, i made it and it never got used so, i thought
 i would just put it up - that is steven layton from stevenlaytonsphotography.ca</p>
+</div>
 </content>
 </entry> 
   
 
 <entry>
 <title>little house on the edge of the prairie</title>
-<link href="http://www.designr8.com/blog?title=little house on the edge of the prairie"></link>
-<id>http://www.designr8.com/blog?title=little house on the edge of the prairie</id>
+<link href="http://www.designr8.com/blog?title=little%20house%20on%20the%20edge%20of%20the%20prairie"/>
+<id>http://www.designr8.com/blog?title=little%20house%20on%20the%20edge%20of%20the%20prairie</id>
 <summary>a cube shack in nordegg</summary>
-<updated>Wed Oct 24 02:28:09 MDT 2012</updated>
-<category>landscape</category>
-<category>painting</category>
-<thumbnail>https://lh3.googleusercontent.com/-mLbl7ODceWs/UIelIWbHXkI/AAAAAAAAFvE/kqkr52O6IbI/s200/rmh.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh3.googleusercontent.com/-mLbl7ODceWs/UIelIWbHXkI/AAAAAAAAFvE/kqkr52O6IbI/s599/rmh.png" ></img>
+<updated>2012-10-24T02:28:09-07:00</updated>
+
+  <category term="/paint" label="paint"/>
+    <category term="/alberta" label="alberta"/>
+    
+<media:thumbnail url="https://lh3.googleusercontent.com/-mLbl7ODceWs/UIelIWbHXkI/AAAAAAAAFvE/kqkr52O6IbI/s200/rmh.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh3.googleusercontent.com/-mLbl7ODceWs/UIelIWbHXkI/AAAAAAAAFvE/kqkr52O6IbI/s599/rmh.png"/>
 <p>trying gimp 2.8, thought I would change things up a little bit. i have gotten into a bit
 of a groove with mypaint, but my fav brush there is angled, the scraper, well, its not even
 a brush really, but its a tool - its really cool, but i wish it wasnt so narrow</p>
@@ -382,6 +439,7 @@ thumbs up to the newest version 2.8</p>
 <p>brush dynamics is making all the difference in the gimp, hey, this painting was done in less
 than 15 minutes after midnight ....</p>
 
+</div>
 </content>
 </entry>
 
@@ -389,27 +447,32 @@ than 15 minutes after midnight ....</p>
 
 <entry>
 <title>OpenDNS Family Shield</title>
-<link href="http://www.designr8.com/blog?title=OpenDNS Family Shield"></link>
-<id>http://www.designr8.com/blog?title=OpenDNS Family Shield</id>
+<link href="http://www.designr8.com/blog?title=OpenDNS%20Family%20Shield"/>
+<id>http://www.designr8.com/blog?title=OpenDNS%20Family%20Shield</id>
 <summary>Protecting your family online with OpenDNS</summary>
-<updated>Mon Oct 22 12:28:30 MDT 2012</updated>
-<category>internet</category>
-<thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9EAx5KO_TYPt4YLP9uQ0yh0UlXb6DvyMdD2zYVTcwvZYBWYc</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<updated>2012-10-22T12:28:30-07:00</updated>
 
-<H2>DNS for dummies</H2>
-<UL>
-	<LI> DNS stands for Domanin Name Server </LI>
-	<LI> DNS is what the internet uses to
-	locate websites, it is a directory 
-	</LI>
-	<LI> The internet is a collection of
-	computers with addresses, just like a city is a collection of houses
-	with addresses </LI>
-	<LI> Computers understand ip addresses
-	that look like phone numbers. eg:</LI> 
-</UL>
- <pre><code> 
+  <category term="/family" label="family"/>
+  
+<media:thumbnail url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9EAx5KO_TYPt4YLP9uQ0yh0UlXb6DvyMdD2zYVTcwvZYBWYc"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+
+<h2>DNS for dummies</h2>
+	<ul>
+		<li> DNS stands for Domanin Name Server </li>
+		<li> DNS is what the internet uses to
+			locate websites, it is a directory
+		</li>
+		<li> The internet is a collection of
+			computers with addresses, just like a city is a collection of houses
+			with addresses
+		</li>
+		<li> Computers understand ip addresses
+			that look like phone numbers. eg:
+		</li>
+	</ul>
+ <pre>
+<code> 
  $ nslookup opendns.com
  
  Server:		208.67.222.123
@@ -423,13 +486,15 @@ than 15 minutes after midnight ....</p>
  Name:	opendns.com
  
  Address: 67.215.92.211
- </code></pre>
+ </code>
+</pre>
  <p>
  The nslookup command is asking where do
 I find the computer that OpenDNS.com uses to serve its website. The
 answer is called the Address. Your computer uses this address to get
 the website. 
- </p><p>
+ </p>
+<p>
  There are a number of ways to block
 adult content on your computers. FamilyShield by OpenDNS can be a
 solution for your entire network that does not require software on
@@ -437,14 +502,14 @@ each computer. It can be set for all computers on your network by
 your modem or router. Aternatively, it can be used on each computer. 
  </p>
  
-<H2>How it Works</H2>
+<h2>How it Works</h2>
  <p>
  Your default network configuration gets
 its DNS from your internet providers DHCP server. DHCP stands for
 Dynamic Host Control Protocol, which basically sets up your computers
 address, so content can find you when you request it AND your DNS, so
 you can find the content when you request it. 
- </p>>
+ </p>&gt;
  <p>
  Internet Service Providers (ISP) do not
 restrict what types of content it will allow you to search for in
@@ -459,38 +524,37 @@ computer is directed to a page that indicates that site is blocked.
  </p>
  
 <h2>Advantages of OpenDNS</h2>
-<UL>
-	<LI> No extra software on your computer </LI>
-	<LI> Results are independent of browser
-	choice (works for all browsers) </LI>
-	<LI> Community maintained list of
-	inappropriate sites, thousands of users use this service</LI> 
-	<LI> Can be configured for a network
-	wide solution on your router </LI>
-	<LI> Difficult to bypass (impossible
-	from the browser) </LI>
-	<LI> Free </LI>
-</UL>
+<ul>
+	<li> No extra software on your computer </li>
+	<li> Results are independent of browser
+	choice (works for all browsers) </li>
+	<li> Community maintained list of
+	inappropriate sites, thousands of users use this service</li> 
+	<li> Can be configured for a network
+	wide solution on your router </li>
+	<li> Difficult to bypass (impossible
+	from the browser) </li>
+	<li> Free </li>
+</ul>
  
  
-<H2>Disadvantages of OpenDNS</H2>
-<UL>
-	<LI> Marginally adult content on sites
+<h2>Disadvantages of OpenDNS</h2>
+<ul>
+	<li> Marginally adult content on sites
 	that contain mostly moderated content is not filtered; for
-	instance YouTube </LI> 
-	<LI> Only as good as its block list;
+	instance YouTube </li> 
+	<li> Only as good as its block list;
 	new sites are always appearing, though it can guess that these sites
-	should be blocked based on its active directory management</LI> 
-	<LI> Not a replacement for supervised
+	should be blocked based on its active directory management</li> 
+	<li> Not a replacement for supervised
 	internet usage, essentially because of YouTube there is no
-	replacement as good as adult supervised internet use </LI> 
-	<LI> Requires knowledge of your systems
+	replacement as good as adult supervised internet use </li> 
+	<li> Requires knowledge of your systems
 	to change your DNS settings (one time only) <br/>
-	<A HREF="https://store.opendns.com/familyshield/setup/">https://store.opendns.com/familyshield/setup/</A>
-	</LI> 
-</UL>
-
-
+	<a href="https://store.opendns.com/familyshield/setup/">https://store.opendns.com/familyshield/setup/</a>
+	</li> 
+</ul>
+</div>
 </content>
 </entry>
 
@@ -498,35 +562,37 @@ computer is directed to a page that indicates that site is blocked.
 
 <entry>
 <title>sweetpea quickie</title>
-<link href="http://www.designr8.com/blog?title=sweetpea quickie" ></link>
-<id>http://www.designr8.com/blog?title=sweetpea quickie</id>
-<updated>Mon Oct  8 00:28:48 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=sweetpea%20quickie"/>
+<id>http://www.designr8.com/blog?title=sweetpea%20quickie</id>
+<updated>2012-10-08T00:28:48-07:00</updated>
 <summary>just a painting of a flower</summary>
-<category>flower</category>
-<category>mypaint</category>
-<category>paint</category>
-<thumbnail>https://lh4.googleusercontent.com/-F0tUf0Dadfk/UHJwsVYMi5I/AAAAAAAAFss/F6YX7If3HlM/s200/sweatpea.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh4.googleusercontent.com/-F0tUf0Dadfk/UHJwsVYMi5I/AAAAAAAAFss/F6YX7If3HlM/s777/sweatpea.png">
-</img>
+
+  <category term="/paint" label="paint"/>
+    
+<media:thumbnail url="https://lh4.googleusercontent.com/-F0tUf0Dadfk/UHJwsVYMi5I/AAAAAAAAFss/F6YX7If3HlM/s200/sweatpea.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh4.googleusercontent.com/-F0tUf0Dadfk/UHJwsVYMi5I/AAAAAAAAFss/F6YX7If3HlM/s777/sweatpea.png"/>
+
 <p>dropped into another draw and chat, and everyone left. aw well, managed to squiggle out
 this paining of a sweetpea. </p>
 <p>who love the sun?</p>
+</div>
 </content>
 </entry>
 
 
 <entry>
 <title>fergie - the dutchess - clumsy - painting</title>
-<link href="http://www.designr8.com/blog?title=fergie - the dutchess - clumsy - painting" ></link>
-<id>http://www.designr8.com/blog?title=fergie - the dutchess - clumsy - painting</id>
-<updated>Fri Oct  5 23:26:51 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=fergie%20-%20the%20dutchess%20-%20clumsy%20-%20painting"/>
+<id>http://www.designr8.com/blog?title=fergie%20-%20the%20dutchess%20-%20clumsy%20-%20painting</id>
+<updated>2012-10-05T23:26:51-07:00</updated>
 <summary>love sic thang</summary>
-<category>pop star worship</category>
-<category>painting</category>
-<thumbnail>https://lh3.googleusercontent.com/-IGnFZaw_K3Y/UG_Bt3W4EdI/AAAAAAAAFsU/4ou_G6nQCWs/s200/The%2BDutchess.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh3.googleusercontent.com/-0ARaa8iDrLA/UG_AFT2GY3I/AAAAAAAAFsU/yvDm7pabtPM/s700/fergie.png" ></img>
+
+  <category term="/paint" label="paint"/>
+
+<media:thumbnail url="https://lh3.googleusercontent.com/-IGnFZaw_K3Y/UG_Bt3W4EdI/AAAAAAAAFsU/4ou_G6nQCWs/s200/The%2BDutchess.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh3.googleusercontent.com/-0ARaa8iDrLA/UG_AFT2GY3I/AAAAAAAAFsU/yvDm7pabtPM/s700/fergie.png"/>
 <h2>finding that draw and chat can be a good time</h2>
 <p>if you look for google plus hangouts, draw and chat hangout you will likely find 
 a good hangout, check it out!</p>
@@ -534,6 +600,7 @@ a good hangout, check it out!</p>
 came on the radio (89.3), so, since then, i've been blasting that song on my
 new stereo.</p>
 <p>good times</p>
+</div>
 </content>
 
 </entry>  
@@ -542,17 +609,18 @@ new stereo.</p>
   
 <entry>
 <title>three legged deer</title>
-<link href="http://www.designr8.com/blog?title=three legged deer"></link>
-<id>http://www.designr8.com/blog?title=three legged deer</id>
-<updated>Fri Oct  5 00:07:13 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=three%20legged%20deer"/>
+<id>http://www.designr8.com/blog?title=three%20legged%20deer</id>
+<updated>2012-10-05T00:07:13-07:00</updated>
 <summary>found this laying around, many people seem to like the 
 source photo so i painted it</summary>
-<category>wildlife</category>
-<category>nature</category>
-<category>paint</category>
-<thumbnail>https://lh6.googleusercontent.com/-fES0WAIntoM/UG54dzR4ywI/AAAAAAAAFqg/LCg_TQGn9MQ/s220/deer02.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh6.googleusercontent.com/-fES0WAIntoM/UG54dzR4ywI/AAAAAAAAFqg/LCg_TQGn9MQ/s770/deer02.png" ></img>
+
+  <category term="/paint" label="paint"/>
+    <category term="/alberta" label="alberta"/>
+    
+<media:thumbnail url="https://lh6.googleusercontent.com/-fES0WAIntoM/UG54dzR4ywI/AAAAAAAAFqg/LCg_TQGn9MQ/s220/deer02.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh6.googleusercontent.com/-fES0WAIntoM/UG54dzR4ywI/AAAAAAAAFqg/LCg_TQGn9MQ/s770/deer02.png"/>
 <h2>I was swimming ... </h2>
 <p>in whitecourt on a day off this summer. There is a very 
 nice man made lake in town, it has waterslides and a very nice path to walk around on.</p>
@@ -565,49 +633,54 @@ just looked at me like i was meant to be there and kept eating. I was only 10 fe
 <p>good times</p>
 
 
+</div>
 </content>
 </entry>  
   
   
 <entry>
 <title>which painting is better</title>
-<link href="http://www.designr8.com/blog?title=which painting is better"></link>
-<id>http://www.designr8.com/blog?title=which painting is better</id>
-<updated>Wed Oct  3 10:01:24 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=which%20painting%20is%20better"/>
+<id>http://www.designr8.com/blog?title=which%20painting%20is%20better</id>
+<updated>2012-10-03T10:01:24-07:00</updated>
 <summary>I am stuck on what to do with this painting</summary>
-<category>Google+</category>
-<category>Paint</category>
-<thumbnail>https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s200/kayc03.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <category term="/paint" label="paint"/>
+  
+<media:thumbnail url="https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s200/kayc03.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
 <p>I have been working on this for 2 days, thank you 
 <a href="https://plus.google.com/u/0/104384988816098278951/posts">+Kay C</a>
 for helping me with this one, hope it isnt to weird! 
 </p>
 
-<img src="https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s200/kayc03.png">
-</img>
+<img src="https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s200/kayc03.png"/>
 
 
-<img src="https://lh5.googleusercontent.com/-4mHZzpNm-h8/UGxfUBtMK4I/AAAAAAAAFpk/pKFn2FiFQcE/s576/kayc02.png"></img>
-<img src="https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s576/kayc03.png"></img>
-<img src="https://lh5.googleusercontent.com/-4mHZzpNm-h8/UGxfUBtMK4I/AAAAAAAAFpk/pKFn2FiFQcE/s200/kayc02.png"></img>
 
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG9HWFpLWXE0bkxoRVNzcDIwODJMM3c6MQ" width="760" height="626" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<img src="https://lh5.googleusercontent.com/-4mHZzpNm-h8/UGxfUBtMK4I/AAAAAAAAFpk/pKFn2FiFQcE/s576/kayc02.png"/>
+<img src="https://lh6.googleusercontent.com/-4p4QfoLWVJA/UGxi4rZrSdI/AAAAAAAAFpw/FiQ-3OKxYY8/s576/kayc03.png"/>
+<img src="https://lh5.googleusercontent.com/-4mHZzpNm-h8/UGxfUBtMK4I/AAAAAAAAFpk/pKFn2FiFQcE/s200/kayc02.png"/>
+
+<!-- <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG9HWFpLWXE0bkxoRVNzcDIwODJMM3c6MQ" width="760" height="626" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+
+</div>
 </content>
 </entry>  
   
   
 <entry>
 <title>mypaint farm Draw and Chat Hangout</title>
-<link href="http://www.designr8.com/blog?title=mypaint farm Draw and Chat Hangout"></link>
-<id>http://www.designr8.com/blog?title=mypaint farm Draw and Chat Hangout</id>
-<updated>Sat Sep 29 00:16:46 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=mypaint%20farm%20Draw%20and%20Chat%20Hangout"/>
+<id>http://www.designr8.com/blog?title=mypaint%20farm%20Draw%20and%20Chat%20Hangout</id>
+<updated>2012-09-29T00:16:46-07:00</updated>
 <summary>Some thoughts on G+ Hangouts and MyPaint</summary>
-<category>Google</category>
-<category>paint</category>
-<thumbnail>https://lh5.googleusercontent.com/-WZ1Uyj_6oCU/UGaOjfJp12I/AAAAAAAAFo8/5Zp7hEcfLq0/s200/farm01.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh5.googleusercontent.com/-WZ1Uyj_6oCU/UGaOjfJp12I/AAAAAAAAFo8/5Zp7hEcfLq0/s1066/farm01.png" ></img>
+
+  <category term="/paint" label="paint"/>
+  
+<media:thumbnail url="https://lh5.googleusercontent.com/-WZ1Uyj_6oCU/UGaOjfJp12I/AAAAAAAAFo8/5Zp7hEcfLq0/s200/farm01.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh5.googleusercontent.com/-WZ1Uyj_6oCU/UGaOjfJp12I/AAAAAAAAFo8/5Zp7hEcfLq0/s1066/farm01.png"/>
 <h2>I was in a nice public hangout and ...</h2>
 <p>I made this painting, the hangout was called Draw and Chat, so, cool, thats what we did.</p>
 <p>MyPaint is running nicely on my computer. Though the google talk plugin crashes about every 20
@@ -618,7 +691,9 @@ that block lists should be a specific circle and you should be able to share the
 Unlike other circles though you would not want to get posts from them, they would be like anti circles,
 with the only thing in common with circles is the management of them. ... Just a thought, of course
 a good troll wouldnt have an issue with making a new gmail account everyday.</p>
-<p>Anyway the reference image for this sketch is on my <a href="http://t.co/ZjfxsDQk">twit pics</a></p>
+<p>Anyway the reference image for this sketch is on my <a href="http://t.co/ZjfxsDQk">twit pics</a>
+</p>
+</div>
 </content>
 </entry>  
   
@@ -626,16 +701,17 @@ a good troll wouldnt have an issue with making a new gmail account everyday.</p>
 
 <entry>
 <title>xsl to convert from unix date to w3c complete date</title>
-<link href="http://www.designr8.com/blog?title=xsl to convert from unix date to w3c complete date"></link>
-<id>http://www.designr8.com/blog?title=xsl to convert from unix date to w3c complete date</id>
-<updated>Sun Sep 23 11:08:38 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=xsl%20to%20convert%20from%20unix%20date%20to%20w3c%20complete%20date"/>
+<id>http://www.designr8.com/blog?title=xsl%20to%20convert%20from%20unix%20date%20to%20w3c%20complete%20date</id>
+<updated>2012-09-23T11:08:38-07:00</updated>
 <summary>I use the output of unix date command to date my blog entries, but
 sitemaps require w3c complete date format</summary>
-<category>technology</category>
-<category>internet</category>
-<thumbnail>https://lh4.googleusercontent.com/-Qfy-7KakX1Q/UF9Di_04AAI/AAAAAAAAFls/Ye9DPmq2yrw/s200/XML1.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh4.googleusercontent.com/-Qfy-7KakX1Q/UF9Di_04AAI/AAAAAAAAFls/Ye9DPmq2yrw/s200/XML1.jpg" ></img>
+
+	<category term="/xml" label="xml"/>
+    
+<media:thumbnail url="https://lh4.googleusercontent.com/-Qfy-7KakX1Q/UF9Di_04AAI/AAAAAAAAFls/Ye9DPmq2yrw/s200/XML1.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh4.googleusercontent.com/-Qfy-7KakX1Q/UF9Di_04AAI/AAAAAAAAFls/Ye9DPmq2yrw/s200/XML1.jpg"/>
 <h2>Where to start?</h2>
 <p>info before rant i guess. The unix date command its the defacto
 representation of dates because it is ubiquitous. That said the official date spec
@@ -646,12 +722,12 @@ date format. </p>
 <p>Sun Sep 23 11:08:38 MDT 2012</p>
 <p>2012-09-23</p>
 <h2>xsl code</h2>
-<p>this gist is the formatdate function from part of an xsl</p>
-<script src="https://gist.github.com/3772418.js"> </script>
+<p>this <a href="https://gist.github.com/semisided1/3772418">gist</a> is the formatdate function from part of an xsl</p>
 <p>you can see the rest of the xsl in my github,
 <a href="https://github.com/semisided1/designr8/blob/master/war/sitemap.xsl"> here </a> </p>
-<p>you can see the xml input to this file <a href="https://github.com/semisided1/designr8/blob/master/war/blog/atom.xml">here</a></p>
-<p>you can see the xml output to this transform <a href="http://www.designr8.com/sitemap.xml" > here </a> </p>
+<p>you can see the xml input to this file <a href="https://github.com/semisided1/designr8/blob/master/war/blog/atom.xml">here</a>
+</p>
+<p>you can see the xml output to this transform <a href="http://www.designr8.com/sitemap.xml"> here </a> </p>
 <h2>&lt;end-of-useful-information/&gt;</h2>
 <p>The word of the year is fanboy, this is funny to me because
 I have been around long enough to have seen a few passing fads.
@@ -686,25 +762,27 @@ meantime if you are interested in that, you could grok my github.
 </p>
 
 
+</div>
 </content>
 </entry>
   
 <entry>
 <title>late night hangout rose</title>
-<link href="http://www.designr8.com/blog?title=late night hangout rose"></link>
-<id>http://www.designr8.com/blog?title=late night hangout rose</id>
-<updated>Sun Sep 23 01:28:52 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=late%20night%20hangout%20rose"/>
+<id>http://www.designr8.com/blog?title=late%20night%20hangout%20rose</id>
+<updated>2012-09-23T01:28:52-07:00</updated>
 <summary>just doodling while I was chatting in a public Google Hangout.</summary>
-<category>rose</category>
-<category>painting</category>
-<category>art</category>
-<thumbnail>https://lh6.googleusercontent.com/-NiASNTzZ6-s/UF65uhc5QqI/AAAAAAAAFks/lcY-OukfdPE/s200/rose01.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh6.googleusercontent.com/-NiASNTzZ6-s/UF65uhc5QqI/AAAAAAAAFks/lcY-OukfdPE/s500/rose01.png" ></img>
+
+ <category term="/paint" label="paint"/>
+
+<media:thumbnail url="https://lh6.googleusercontent.com/-NiASNTzZ6-s/UF65uhc5QqI/AAAAAAAAFks/lcY-OukfdPE/s200/rose01.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh6.googleusercontent.com/-NiASNTzZ6-s/UF65uhc5QqI/AAAAAAAAFks/lcY-OukfdPE/s500/rose01.png"/>
 <p>not much to say about this one, just started drawing and this is the result
 </p>
 <p>something as pointless as a flower is perfect to draw to relieve
 stress because there is no plan, only results</p>
+</div>
 </content>
 </entry>
   
@@ -717,14 +795,16 @@ stress because there is no plan, only results</p>
   
 <entry>
 <title>xfce dual monitor with onboard video card</title>
-<link href="http://www.designr8.com/blog?title=xfce dual monitor with onboard video card"></link>
-<id>http://www.designr8.com/blog?title=xfce dual monitor with onboard video card</id>
-<updated>Sat Sep 22 20:36:27 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=xfce%20dual%20monitor%20with%20onboard%20video%20card"/>
+<id>http://www.designr8.com/blog?title=xfce%20dual%20monitor%20with%20onboard%20video%20card</id>
+<updated>2012-09-22T20:36:27-07:00</updated>
 <summary>How to setup dual monitors on xfce4 with one crappy onboard video card that has hdmi</summary>
-<category>technology</category>
-<thumbnail>https://lh3.googleusercontent.com/-snUIvoXFO88/UF4dwyctbrI/AAAAAAAAFhw/9_acwjyeEUs/s200/IMAG0596.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh4.googleusercontent.com/-dM0fIe9T9Po/UF4gVFEBj7I/AAAAAAAAFiA/2bYzzky1TzE/s903/xv.png" ></img>
+
+ <category term="/linux" label="linux"/>
+
+<media:thumbnail url="https://lh3.googleusercontent.com/-snUIvoXFO88/UF4dwyctbrI/AAAAAAAAFhw/9_acwjyeEUs/s200/IMAG0596.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh4.googleusercontent.com/-dM0fIe9T9Po/UF4gVFEBj7I/AAAAAAAAFiA/2bYzzky1TzE/s903/xv.png"/>
 <p>I have a middle of the road onboard video card on my comptuer, but it has both hdmi and vga outputs. This is 
 how I managed to get dual head on my computer, this really rocks.
 </p>
@@ -736,7 +816,8 @@ Now logout and login. Now run arandr, but you will have perhaps some resolution 
 the default is to have both monitors the same resolution and displaying the same thing.</p>
 <ol>
 <li>Set the resolution for your desired monitors from the outputs menu.
-</li><li>
+</li>
+<li>
 Drag the rectangle with the same label as your right monitor to the right of the rectangle
 representing your left monitor.</li>
 <li>Select apply.</li>
@@ -744,13 +825,14 @@ representing your left monitor.</li>
 </ol>
 <h2>Add to xfce4 startup and modify .xinitrc</h2>
 <ol>
-<li>select Layout -> save as. Create a file that you will be able to remember, for me i used
+<li>select Layout -&gt; save as. Create a file that you will be able to remember, for me i used
  /home/dd/sbin/dualmon.sh </li>
 <li> chmod +x dualmon.sh</li>
-<li> add dualmon.sh to your xfce4 startup. Application Menu -> Settings -> Session and Startup </li>
+<li> add dualmon.sh to your xfce4 startup. Application Menu -&gt; Settings -&gt; Session and Startup </li>
 <li> this totally breaks the script called startxfce4 unfortunately, so, the best way to fix this is ...
  (hehe this is so dirty) edit your .xinitrc file in your home directory like this:</li>
- <code><pre>#!/bin/sh
+ <code>
+<pre>#!/bin/sh
 #
 # ~/.xinitrc
 #
@@ -763,11 +845,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 exec /bin/sh /etc/xdg/xfce4/xinitrc
- </pre></code>
+ </pre>
+</code>
  </ol>
  <p> I am sure there is a good reason why startxfce4 sets up some environment variables and
  does a bunch of checks, but it must not apply to me, because this works fine.</p>
  <p> Enjoy the screen real estate!! </p>
+</div>
 </content>
 </entry>
   
@@ -777,14 +861,16 @@ exec /bin/sh /etc/xdg/xfce4/xinitrc
   
 <entry>
 <title>Linux so I can Work - My Arch Linux Setup</title>
-<link href="http://www.designr8.com/blog?title=Linux so I can Work - My Arch Linux Setup"></link>
-<id>http://www.designr8.com/blog?title=Linux so I can Work - My Arch Linux Setup</id>
-<updated>Sun Sep  2 12:11:59 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=Linux%20so%20I%20can%20Work%20-%20My%20Arch%20Linux%20Setup"/>
+<id>http://www.designr8.com/blog?title=Linux%20so%20I%20can%20Work%20-%20My%20Arch%20Linux%20Setup</id>
+<updated>2012-09-02T12:11:59-07:00</updated>
 <summary>Arch Linux setup</summary>
-<category>technology</category>
-<thumbnail>http://lh3.googleusercontent.com/-7PX5kwm53Jg/UEOwHTDBlpI/AAAAAAAAFd0/zUEasy4_GB8/s200/Screenshot+-+090212+-+12%3A56%3A58.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh3.googleusercontent.com/-7PX5kwm53Jg/UEOwHTDBlpI/AAAAAAAAFd0/zUEasy4_GB8/s894/Screenshot+-+090212+-+12%3A56%3A58.png" ></img>
+
+ <category term="/linux" label="linux"/>
+ 
+<media:thumbnail url="http://lh3.googleusercontent.com/-7PX5kwm53Jg/UEOwHTDBlpI/AAAAAAAAFd0/zUEasy4_GB8/s200/Screenshot+-+090212+-+12%3A56%3A58.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-7PX5kwm53Jg/UEOwHTDBlpI/AAAAAAAAFd0/zUEasy4_GB8/s894/Screenshot+-+090212+-+12%3A56%3A58.png"/>
 <p>Well I've resisted flaunting my Arch Linux Setup for sometime. After reading
 a blog on how the Linux Desktop is dead I have to stand up and object vehemently.
 </p>
@@ -804,28 +890,36 @@ and has been a pleasure to maintain.</p>
 <ul>
 <li>
 slim : x11 startup / login manager
-</li><li>
+</li>
+<li>
 xfce4-session : manages the x11 session
-</li><li>
+</li>
+<li>
 xfdesktop : background and folders on the desktop
-</li><li>
+</li>
+<li>
 xfwm4 : window manager
-</li><li>
+</li>
+<li>
 xfce4-panel : launcher and applet container
-</li><li>
+</li>
+<li>
 terminal : the xfce terminal
-</li><li>
+</li>
+<li>
 xfce4-taskmanager : helpful
 </li>
 </ul>
-<code><pre>
+<code>
+<pre>
 $ yaourt -S slim xfce4-session xfdesktop xfwm4 xfce4-panel terminal xfce4-taskmanager
 $ yaourt xfce4-goodies
 </pre>
 </code>
 <p>I am fond of using slim as the x11 startup manager to do this change the default run level in /etc/inittab to 5,
 then add the login line to your /etc/inittab</p>
-<code><pre>
+<code>
+<pre>
 #somewhere near start of inittab:
 # Boot to X11
 id:5:initdefault:
@@ -837,32 +931,37 @@ x:5:respawn:/usr/bin/slim
 </code>
 <p>though slim does have a mechanism to select desktops with the f2 key, i did not figure out how to setup 
 multiple desktop and reverted to the old school xinitrc method. to do this we will edit ~/.xinitrc </p>
-<code><pre>
+<code>
+<pre>
 xfce4-panel &amp;
 exec startxfce4
 </pre>
 </code>
 <p>enjoy! if you have problems with the setup of slim / xfce4, to retest your setup you do not need to 
 reboot your system. simply login as root by pressing alt+f1, issue the command </p>
-<code><pre>
+<code>
+<pre>
 # init 3
 # init 5
 </pre>
 </code>
+</div>
 </content>
 </entry>
 
 
 <entry>
 <title>Juicy Veggie Burgers Redo</title>
-<link href="http://www.designr8.com/blog?title=Juicy Veggie Burgers Redo"></link>
-<id>http://www.designr8.com/blog?title=Juicy Veggie Burgers Redo</id>
-<updated>Sat Jun  9 20:44:21 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=Juicy%20Veggie%20Burgers%20Redo"/>
+<id>http://www.designr8.com/blog?title=Juicy%20Veggie%20Burgers%20Redo</id>
+<updated>2012-06-09T20:44:21-07:00</updated>
 <summary>Mushroom, onion and red pepper skewers on a veggie burger</summary>
-<category>food</category>
-<thumbnail>http://lh3.googleusercontent.com/-bVHos0Rne_E/T9QJVt643DI/AAAAAAAAE08/9I_bxGNzLXk/s200/IMAG0322.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh3.googleusercontent.com/-bVHos0Rne_E/T9QJVt643DI/AAAAAAAAE08/9I_bxGNzLXk/s880/IMAG0322.jpg" ></img>
+
+ <category term="/food" label="food"/>
+ 
+<media:thumbnail url="http://lh3.googleusercontent.com/-bVHos0Rne_E/T9QJVt643DI/AAAAAAAAE08/9I_bxGNzLXk/s200/IMAG0322.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-bVHos0Rne_E/T9QJVt643DI/AAAAAAAAE08/9I_bxGNzLXk/s880/IMAG0322.jpg"/>
 <p>Ok, veggie burgers on the grill on a Saturday is beginning to be a recurring pattern for me. This time 
 I will share my secret marinade for veggie skewers and top it off with guacomole.</p>
 <p>Prepare your guacomole ahead of time.</p>
@@ -878,6 +977,7 @@ I will share my secret marinade for veggie skewers and top it off with guacomole
 <p>put that on skewrs and save the remaining sauce to pour on them while grilling</p>
 <p>grill some veggie burgers about half as long as the veggies, and grill some fresh bread cut thick</p>
 <p>enjoy!</p>
+</div>
 </content>
 </entry>
 
@@ -885,31 +985,36 @@ I will share my secret marinade for veggie skewers and top it off with guacomole
 
 <entry>
 <title>Juicy Veggie Burgers</title>
-<link href="http://www.designr8.com/blog?title=Juicy Veggie Burgers"></link>
-<id>http://www.designr8.com/blog?title=Juicy Veggie Burgers</id>
-<updated>Sat Jun  2 22:26:34 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=Juicy%20Veggie%20Burgers"/>
+<id>http://www.designr8.com/blog?title=Juicy%20Veggie%20Burgers</id>
+<updated>2012-06-02T22:26:34-07:00</updated>
 <summary>Tomato, onion and avocado skewers on a veggie burger</summary>
-<category>food</category>
-<thumbnail>http://lh3.googleusercontent.com/-doeGblpZFF4/T8rpx9ftMgI/AAAAAAAAEzs/dHx6yY1RmmU/s200/2012%2B-%2B1 </thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh3.googleusercontent.com/-doeGblpZFF4/T8rpx9ftMgI/AAAAAAAAEzs/dHx6yY1RmmU/s880/2012%2B-%2B1" ></img>
+
+ <category term="/food" label="food"/>
+ 
+<media:thumbnail url="http://lh3.googleusercontent.com/-doeGblpZFF4/T8rpx9ftMgI/AAAAAAAAEzs/dHx6yY1RmmU/s200/2012%2B-%2B1"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-doeGblpZFF4/T8rpx9ftMgI/AAAAAAAAEzs/dHx6yY1RmmU/s880/2012%2B-%2B1"/>
 <p>Sometimes veggie burgers can get dry on the grill, really they do not need to be cooked
 for very long, but one way to make your grilled veggie burger less dry is a skewer of veggies.</p>
 <p>Here I have a skewer with onion, tomato and avocado grilled lightly with hot sauce.</p>
 <p>enjoy!</p>
+</div>
 </content>
 </entry>
 
 
 <entry>
 <title>HDR photography on Android Ice Cream Sandwich</title>
-<link href="http://www.designr8.com/blog?title=HDR photography on Android Ice Cream Sandwich"></link>
-<id>http://www.designr8.com/blog?title=HDR photography on Android Ice Cream Sandwich</id>
-<updated>Tue May 22 21:14:53 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=HDR%20photography%20on%20Android%20Ice%20Cream%20Sandwich"/>
+<id>http://www.designr8.com/blog?title=HDR%20photography%20on%20Android%20Ice%20Cream%20Sandwich</id>
+<updated>2012-05-22T21:14:53-07:00</updated>
 <summary>Quick guide to HDR on latest Android - HTC One X</summary>
-<category>Technology</category>
-<thumbnail>https://lh3.googleusercontent.com/-R61rD_p-Qyk/TiRxmG-mEtI/AAAAAAAAAG0/4GYL8XiQZ_w/s200/android_vs_ios_by_phragmentation-d2tw4uf.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+ <category term="/photography" label="photography"/>
+ 
+<media:thumbnail url="https://lh3.googleusercontent.com/-R61rD_p-Qyk/TiRxmG-mEtI/AAAAAAAAAG0/4GYL8XiQZ_w/s200/android_vs_ios_by_phragmentation-d2tw4uf.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
 <p>HDR is kindof a new technique to get inferior cameras to create photos with 
 a wider range of contrast. It gives photos a more real look. There are some 
 drawbacks to HDR as well.
@@ -918,7 +1023,7 @@ drawbacks to HDR as well.
 The dark areas of the over exposed image are emphasised while the light areas of the 
 under exposed image are emphasised.
 </p>
-<img src="http://dl.dropbox.com/u/51147382/Screenshot_2012-05-22-17-06-17.png" ></img>
+<img src="http://dl.dropbox.com/u/51147382/Screenshot_2012-05-22-17-06-17.png"/>
 <p> Firstly, finding the HDR setting on the Android is not difficult. When you are in 
 the camera, tap the A in the top left corner and scroll to find the choice from the
 various camera modes.
@@ -931,59 +1036,74 @@ by the distance and the effect does not work, everything will appear to have a s
 <p>Ok, lets look at 2 photos, one taken with a regular setting, then the second with HDR. 
 </p>
 <h2>Regular HTC One X Photo</h2>
-<img src="http://dl.dropbox.com/u/51147382/2012-05-20%2013.31.36.jpg" />
+<img src="http://dl.dropbox.com/u/51147382/2012-05-20%2013.31.36.jpg"/>
 <h2>HDR HTC One X Photo</h2>
-<img src="http://dl.dropbox.com/u/51147382/2012-05-20%2013.31.44.jpg" />
+<img src="http://dl.dropbox.com/u/51147382/2012-05-20%2013.31.44.jpg"/>
+</div>
 </content>
 </entry>
 
 <entry>
 <title>How to make guacamole</title>
-<link href="http://www.designr8.com/blog?title=How to make guacamole"></link>
-<id>http://www.designr8.com/blog?title=How to make guacamole</id>
-<updated>Fri May 11 17:04:17 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=How%20to%20make%20guacamole"/>
+<id>http://www.designr8.com/blog?title=How%20to%20make%20guacamole</id>
+<updated>2012-05-11T17:04:17-07:00</updated>
 <summary>This is a staple condiment that is so so good.</summary>
-<category>Food</category>
-<thumbnail>http://lh4.googleusercontent.com/-cLCLmUVu0os/T62adMQ64dI/AAAAAAAAEyg/5_Cs8fKFKmY/s200/IMAG0189.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh4.googleusercontent.com/-cLCLmUVu0os/T62adMQ64dI/AAAAAAAAEyg/5_Cs8fKFKmY/s880/IMAG0189.jpg" />
+
+ <category term="/food" label="food"/>
+ 
+ <media:thumbnail url="http://lh4.googleusercontent.com/-cLCLmUVu0os/T62adMQ64dI/AAAAAAAAEyg/5_Cs8fKFKmY/s200/IMAG0189.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh4.googleusercontent.com/-cLCLmUVu0os/T62adMQ64dI/AAAAAAAAEyg/5_Cs8fKFKmY/s880/IMAG0189.jpg"/>
 <ul>
 <li>
 2 or 3 ripe avocados – they are ripe when they are dark green and soft
-</li><li>
+</li>
+<li>
 1 or 2 jalapeno peppers – we wont be using the seeds from the inside
-</li><li>
+</li>
+<li>
 1 lime or lemon or lime or lemon juice – a fresh lime is best
-</li><li>
+</li>
+<li>
 onion – any kind (1/4 cup)
-</li><li>
+</li>
+<li>
 garlic – optional 1 or 2 cloves
-</li><li>tomato – optional 1 ripe tomato
+</li>
+<li>tomato – optional 1 ripe tomato
 </li>
 </ul>
 <p>
 Cut and mix avocados, onion, peppers, tomatoes, garlic (fine). Squeeze the juice of a lime into it. Refrigerate covered.
 </p>
+</div>
 </content>
 
 </entry>
 
 <entry>
 <title>Jasper Deer in MyPaint</title>
-<link href="http://www.designr8.com/blog?title=Jasper Deer in MyPaint" > </link>
-<id>http://www.designr8.com/blog?title=Jasper Deer in MyPaint</id>
-<updated>Tue Apr 24 14:29:12 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=Jasper%20Deer%20in%20MyPaint"/> 
+<id>http://www.designr8.com/blog?title=Jasper%20Deer%20in%20MyPaint</id>
+<updated>2012-04-24T14:29:12-07:00</updated>
 <summary>Drawing a deer from some photos taken on a wonderful fall trip to Jasper</summary>
-<category>Art</category>
-<thumbnail>http://lh5.googleusercontent.com/-IWT-pZSmghw/T5cL1FYamGI/AAAAAAAAEcg/bHux9zwC2j0/s200/deer01.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh5.googleusercontent.com/-IWT-pZSmghw/T5cL1FYamGI/AAAAAAAAEcg/bHux9zwC2j0/s880/deer01.png" />
+
+ <category term="/paint" label="paint"/>
+  <category term="/alberta" label="alberta"/>
+
+<media:thumbnail url="http://lh5.googleusercontent.com/-IWT-pZSmghw/T5cL1FYamGI/AAAAAAAAEcg/bHux9zwC2j0/s200/deer01.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh5.googleusercontent.com/-IWT-pZSmghw/T5cL1FYamGI/AAAAAAAAEcg/bHux9zwC2j0/s880/deer01.png"/>
 <p>I feel that the fall is the best time to visit the mountain parks here. The reference photo was taken in November near Jasper.
 The deer have a nice grey hue and are ambivalent to us - the only tourists around at this time. They casually eat to
 fatten up for what surely must be a long winter.</p>
 <p>If only everyday could be as breath taking as this one. Making this drawing was not hard, it took me to a place
 where I want to be.</p>
-<p><a href="http://fav.me/d4xjxom">Order Prints on DeviantArt</a></p>
+<p>
+<a href="http://fav.me/d4xjxom">Order Prints on DeviantArt</a>
+</p>
+</div>
 </content>
 </entry>
 
@@ -991,14 +1111,15 @@ where I want to be.</p>
 
 <entry>
 <title>Panama in MyPaint with Knife tool and DeviantArt</title>
-<link href="http://www.designr8.com/blog?title=Panama in MyPaint with Knife tool and DeviantArt"  ></link>
-<id>http://www.designr8.com/blog?title=Panama in MyPaint with Knife tool and DeviantArt</id>
-<updated>Mon Apr 23 19:48:13 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=Panama%20in%20MyPaint%20with%20Knife%20tool%20and%20DeviantArt"/>
+<id>http://www.designr8.com/blog?title=Panama%20in%20MyPaint%20with%20Knife%20tool%20and%20DeviantArt</id>
+<updated>2012-04-23T19:48:13-07:00</updated>
 <summary>A quick lanscape using MyPaint 1.0.0 knife tool</summary>
-<category>Art</category>
-<thumbnail>http://lh5.googleusercontent.com/-Kj9T2mGOGFA/T5YE3eBhuHI/AAAAAAAAEbo/yvyGnRcxPjU/s200/panama01.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh5.googleusercontent.com/-Kj9T2mGOGFA/T5YE3eBhuHI/AAAAAAAAEbo/yvyGnRcxPjU/s880/panama01.png" />
+ <category term="/paint" label="paint"/>
+ 
+ <media:thumbnail url="http://lh5.googleusercontent.com/-Kj9T2mGOGFA/T5YE3eBhuHI/AAAAAAAAEbo/yvyGnRcxPjU/s200/panama01.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh5.googleusercontent.com/-Kj9T2mGOGFA/T5YE3eBhuHI/AAAAAAAAEbo/yvyGnRcxPjU/s880/panama01.png"/>
 <p> I started this painting very late last night while I was in a Google Hangout. I promise from now on I will
 not delete my work. To get to the point I am at I have deleted perhaps hundreds of paintings. You have too. 
 That or publish it and forget about it.
@@ -1008,24 +1129,27 @@ since the mid 80's you'd think it would not be a problem to find work, but, thin
 of people graduating from universities and college in the area, the labour market is somewhat satchurated. 
 </p> 
 <p> Anyway, I have made my sketches available on deviantArt, and you can purchase prints there and I get some 
-cash for that. <a href="http://fav.me/d4xh9im" >DeviantArt - semisided1</a> Semisided1 is my username there and twitter.
+cash for that. <a href="http://fav.me/d4xh9im">DeviantArt - semisided1</a> Semisided1 is my username there and twitter.
 Also, you can add to my wealth by clicking advertisments below.
 
 </p>
+</div>
 </content>
 </entry>
 
 
 <entry>
 <title>Landscape in Mypaint</title>
-<link href="http://www.designr8.com/blog?title=Landscape in Mypaint"></link>
-<id>http://www.designr8.com/blog?title=Landscape in Mypaint</id>
-<updated>Thu Apr 19 12:55:22 MDT 2012</updated>
+<link href="http://www.designr8.com/blog?title=Landscape%20in%20Mypaint"/>
+<id>http://www.designr8.com/blog?title=Landscape%20in%20Mypaint</id>
+<updated>2012-04-19T12:55:22-07:00</updated>
 <summary>A quick landscape using MyPaint 1.0.0 </summary>
-<category>Art</category>
-<thumbnail>http://lh3.googleusercontent.com/-6IivBQEbiac/T5BdhkD8gBI/AAAAAAAAEVk/dFljnnGis1Y/s200/Lahul.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh3.googleusercontent.com/-6IivBQEbiac/T5BdhkD8gBI/AAAAAAAAEVk/dFljnnGis1Y/s880/Lahul.jpg" />
+ 
+ <category term="/paint" label="paint"/>
+ 
+<media:thumbnail url="http://lh3.googleusercontent.com/-6IivBQEbiac/T5BdhkD8gBI/AAAAAAAAEVk/dFljnnGis1Y/s200/Lahul.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-6IivBQEbiac/T5BdhkD8gBI/AAAAAAAAEVk/dFljnnGis1Y/s880/Lahul.jpg"/>
 <p>The rock and roll expression 'back in the saddle again' is how I feel right now. I had taken a 
 break from the computer for a week or 2 then when I returned there was sufficient new ongoings to
 inspire me to get going. Firstly, Google Hangouts have been a great help for my motivation. Secondly,
@@ -1034,6 +1158,7 @@ new versions of my favorite applications. MyPaint 1.0.0 is really usable and the
 update.
 </p>
 
+</div>
 </content>
 </entry>
 
@@ -1046,14 +1171,16 @@ update.
 
 <entry>
 <title>Mushroom Asparagus Melt</title>
-<link href="http://www.designr8.com/blog?title=Mushroom Asparagus Melt"></link>
-<id>http://www.designr8.com/blog?title=Mushroom Asparagus Melt</id>
-<updated>Mon Mar  5 19:18:14 MST 2012</updated>
+<link href="http://www.designr8.com/blog?title=Mushroom%20Asparagus%20Melt"/>
+<id>http://www.designr8.com/blog?title=Mushroom%20Asparagus%20Melt</id>
+<updated>2012-03-05T19:18:14-07:00</updated>
 <summary>Vegetarian Bachelor Food Blog</summary>
-<category>food</category>
-<thumbnail>http://lh4.googleusercontent.com/-fiPul_6Og4g/T1V6s_lTq1I/AAAAAAAAEQo/pnMrn-mFfYY/s200/Photo%2520Mar%252005%252C%25206%252034%252003%2520PM.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh4.googleusercontent.com/-fiPul_6Og4g/T1V6s_lTq1I/AAAAAAAAEQo/pnMrn-mFfYY/s640/Photo%2520Mar%252005%252C%25206%252034%252003%2520PM.jpg" />
+
+ <category term="/food" label="food"/>
+ 
+<media:thumbnail url="http://lh4.googleusercontent.com/-fiPul_6Og4g/T1V6s_lTq1I/AAAAAAAAEQo/pnMrn-mFfYY/s200/Photo%2520Mar%252005%252C%25206%252034%252003%2520PM.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh4.googleusercontent.com/-fiPul_6Og4g/T1V6s_lTq1I/AAAAAAAAEQo/pnMrn-mFfYY/s640/Photo%2520Mar%252005%252C%25206%252034%252003%2520PM.jpg"/>
 <p>
 This is my first food blog sorta, well, first one here anyway, I had a blogger post last year about 
 a triffle but I quit blogger, I liked the random trafic there, but I did not like the canned pages, 
@@ -1081,26 +1208,30 @@ recently became vegetarian.
 <li>broil</li>
 <li>serve with glass of tomato juice and dip in balsamic</li>
 </ol>
+</div>
 </content>
 </entry>
 
 
  <entry>
 <title>Tree Planter Stamp</title>
-<link href="http://www.designr8.com/blog?title=Tree Planter Stamp"></link>
-<id>http://www.designr8.com/blog?title=Tree Planter Stamp</id>
-<updated>Fri Feb 24 20:16:01 MST 2012</updated>
+<link href="http://www.designr8.com/blog?title=Tree%20Planter%20Stamp"/>
+<id>http://www.designr8.com/blog?title=Tree%20Planter%20Stamp</id>
+<updated>2012-02-24T20:16:01-07:00</updated>
 <summary>Testing my new computer, reinstalled all my Software</summary>
-<category>paint</category>
-<thumbnail>https://lh5.googleusercontent.com/-kaOos8G3eDo/UF1SkqTpUVI/AAAAAAAAFgE/BMnnnXalBJQ/s200/SKETCHBOOK%2BCOVER.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://dl.dropbox.com/u/51147382/SKETCHBOOK%20COVER.png" />
+
+ <category term="/paint" label="paint"/>
+
+<media:thumbnail url="https://lh5.googleusercontent.com/-kaOos8G3eDo/UF1SkqTpUVI/AAAAAAAAFgE/BMnnnXalBJQ/s200/SKETCHBOOK%2BCOVER.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://dl.dropbox.com/u/51147382/SKETCHBOOK%20COVER.png"/>
 <p>
 keep cool - a tree planter stamp
 
 </p>
 
 
+</div>
 </content>
 </entry> 
   
@@ -1108,14 +1239,16 @@ keep cool - a tree planter stamp
   
 <entry>
 <title>Boring is Good</title>
-<link href="http://www.designr8.com/blog?title=Boring is Good"></link>
-<id>http://www.designr8.com/blog?title=Boring is Good</id>
-<updated>Sun Jan  1 15:39:34 MST 2012</updated>
+<link href="http://www.designr8.com/blog?title=Boring%20is%20Good"/>
+<id>http://www.designr8.com/blog?title=Boring%20is%20Good</id>
+<updated>2012-01-01T15:39:34-07:00</updated>
 <summary>10 minute portrait in MyPaint</summary>
-<category>paint</category>
-<thumbnail>https://lh6.googleusercontent.com/-WDh20FjE_KQ/UF1TdQs7bcI/AAAAAAAAFgM/Tr3FjGKXn4w/s200/ida.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://dl.dropbox.com/u/51147382/ida.png" />
+ 
+ <category term="/paint" label="paint"/>
+ 
+<media:thumbnail url="https://lh6.googleusercontent.com/-WDh20FjE_KQ/UF1TdQs7bcI/AAAAAAAAFgM/Tr3FjGKXn4w/s200/ida.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://dl.dropbox.com/u/51147382/ida.png"/>
 <p>This portrait was not hard to do. I have a fondness for pretty girls and this
 was no exception. With wonderful big eyes and a infectious shyness, painting Ida
 was not hard at all. The results are fine, but what is better is how easy it was
@@ -1124,6 +1257,7 @@ can only be done once you ignore the tools and embrace the result. Being bored o
 the holidays sure gave me a lot of time to think. Not sure what I will do next.</p>
 
 
+</div>
 </content>
 </entry>
 
@@ -1131,14 +1265,14 @@ the holidays sure gave me a lot of time to think. Not sure what I will do next.<
   
 <entry>
 <title>Flowers in MyPaint</title>
-<link href="http://www.designr8.com/blog?title=Flowers in MyPaint"></link>
-<id>http://www.designr8.com/blog?title=Flowers in MyPaint</id>
-<updated>Tue Nov 29 09:59:32 MST 2011</updated>
+<link href="http://www.designr8.com/blog?title=Flowers%20in%20MyPaint"/>
+<id>http://www.designr8.com/blog?title=Flowers%20in%20MyPaint</id>
+<updated>2011-11-29T09:59:32-07:00</updated>
 <summary>Flowers using Ramon R-S Web blend brush in MyPaint for Linux. </summary>
-<category>paint</category>
-<thumbnail>http://lh3.googleusercontent.com/-CsdImsNKmgM/TtULEFNZENI/AAAAAAAAELs/QjJsucV-6Tc/s200/flower.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh3.googleusercontent.com/-CsdImsNKmgM/TtULEFNZENI/AAAAAAAAELs/QjJsucV-6Tc/s880/flower.png" />
+ <category term="/paint" label="paint"/>
+ <media:thumbnail url="http://lh3.googleusercontent.com/-CsdImsNKmgM/TtULEFNZENI/AAAAAAAAELs/QjJsucV-6Tc/s200/flower.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-CsdImsNKmgM/TtULEFNZENI/AAAAAAAAELs/QjJsucV-6Tc/s880/flower.png"/>
 <p>No matter how long I worked on this painting I could
 always find problems with it. There was just too many things that looked the same and had no real contrast, so
 everything looked fake. Then I decided that the point of the picture was not to make the green bits look real, 
@@ -1150,73 +1284,74 @@ to start and this made the initial opacity of the brush to be greyish, so I foun
 painted areas, so, after a while i was filling with a fat brush to get a background gist and then a finer brush to
 get a bit of detail. Not the most enjoyable painting I've ever done just because it was hard not to want to make it
 look realistic, something I want to get away from.</p>
+</div>
 </content>
 </entry>
 
 
 <entry>
 <title>Cuche wins at Lake Louise</title>
-<link href="http://www.designr8.com/blog?title=Cuche wins at Lake Louise"></link>
-<id>http://www.designr8.com/blog?title=Cuche wins at Lake Louise</id>
-<updated>Sat Nov 26 22:31:47 MST 2011</updated>
+<link href="http://www.designr8.com/blog?title=Cuche%20wins%20at%20Lake%20Louise"/>
+<id>http://www.designr8.com/blog?title=Cuche%20wins%20at%20Lake%20Louise</id>
+<updated>2011-11-26T22:31:47-07:00</updated>
 <summary>Painting of Didier Cuche done in MyPaint. Used the Ramon R-S Wet blend brush.</summary>
-<category>paint</category>
-<thumbnail>http://lh5.googleusercontent.com/-SOz2LZhh3oo/TtHJldg2c8I/AAAAAAAAELg/vQvSm0VJYNw/s200/cuche.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh5.googleusercontent.com/-SOz2LZhh3oo/TtHJldg2c8I/AAAAAAAAELg/vQvSm0VJYNw/s880/cuche.png" />
+ <category term="/paint" label="paint"/>
+ <media:thumbnail url="http://lh5.googleusercontent.com/-SOz2LZhh3oo/TtHJldg2c8I/AAAAAAAAELg/vQvSm0VJYNw/s200/cuche.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh5.googleusercontent.com/-SOz2LZhh3oo/TtHJldg2c8I/AAAAAAAAELg/vQvSm0VJYNw/s880/cuche.png"/>
 <p>This is about a half hour drawing. I did an outline with pencil then colored the rest with the Ramon R-S wet 
 blend brush. MyPaint does take sometime to get used too, really need to master the keyboard commands, so I have
 sticky notes, stuck to my monitor with all the shortcut keys.</p>
+</div>
 </content>
 </entry>  
   
   
 <entry>
 <title>Forest Watercolor in MyPaint</title>
-<link href="http://www.designr8.com/blog?title=Forest Watercolor in MyPaint"></link>
-<id>http://www.designr8.com/blog?title=Forest Watercolor in MyPaint</id>
-<updated>Thu Nov 24 14:41:17 MST 2011</updated>
+<link href="http://www.designr8.com/blog?title=Forest%20Watercolor%20in%20MyPaint"/>
+<id>http://www.designr8.com/blog?title=Forest%20Watercolor%20in%20MyPaint</id>
+<updated>2011-11-24T14:41:17-07:00</updated>
 <summary>A 5 minute painting in MyPaint using watercolor brush.</summary>
-<category>paint</category>
-<thumbnail>https://lh4.googleusercontent.com/-78M0hSPSr-k/Ts629zf6kiI/AAAAAAAAELc/glucrmXMjx0/s200/forest%252520watercolor%25252001.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="https://lh4.googleusercontent.com/-78M0hSPSr-k/Ts629zf6kiI/AAAAAAAAELc/glucrmXMjx0/s880/forest%252520watercolor%25252001.jpg" />
+ <category term="/paint" label="paint"/>
+ <media:thumbnail url="https://lh4.googleusercontent.com/-78M0hSPSr-k/Ts629zf6kiI/AAAAAAAAELc/glucrmXMjx0/s200/forest%252520watercolor%25252001.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="https://lh4.googleusercontent.com/-78M0hSPSr-k/Ts629zf6kiI/AAAAAAAAELc/glucrmXMjx0/s880/forest%252520watercolor%25252001.jpg"/>
 <p>I am feeling very blue today and decided to cheer myself up by painting anything.
 The idea being that whatever the result is, in under 5 minutes that is what the painting
 is going to be. I have never used the watercolor brushes in MyPaint and I think that they
 deserve a little more attention.</p>
+</div>
 </content>
 </entry>
   
 <entry>
 <title>Christmas in November</title>
-<link href="http://www.designr8.com/blog?title=Christmas in November"></link>
-<id>http://www.designr8.com/blog?title=Christmas in November</id>
-<updated>Fri Nov 18 21:16:37 MST 2011</updated>
+<link href="http://www.designr8.com/blog?title=Christmas%20in%20November"/>
+<id>http://www.designr8.com/blog?title=Christmas%20in%20November</id>
+<updated>2011-11-18T21:16:37-07:00</updated>
 <summary>HoHoHo how doodles can become Christmas greetings</summary>
-<category>silly</category>
-<category>christmas</category>
-<category>paint</category>
-<thumbnail>http://lh6.googleusercontent.com/-xQoxDPVIML8/Tscs46_PeCI/AAAAAAAAELA/3GblL5UpYg8/s200/designr8%252520merry%252520christmas.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh6.googleusercontent.com/-xQoxDPVIML8/Tscs46_PeCI/AAAAAAAAELA/3GblL5UpYg8/s880/designr8%252520merry%252520christmas.png" />
+ <category term="/paint" label="paint"/>
+ <media:thumbnail url="http://lh6.googleusercontent.com/-xQoxDPVIML8/Tscs46_PeCI/AAAAAAAAELA/3GblL5UpYg8/s200/designr8%252520merry%252520christmas.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh6.googleusercontent.com/-xQoxDPVIML8/Tscs46_PeCI/AAAAAAAAELA/3GblL5UpYg8/s880/designr8%252520merry%252520christmas.png"/>
 
 <p>If you are on my christmas list you are getting a jar of real homemade Yorksire Picalilli ... I am not kidding, its very tasty.</p>
 <p>I am not going to say this was an attempt at a new logo gone bad, oh hell I just did. Peace!</p>
+</div>
 </content>
 </entry>  
   
 <entry>
 <title>Using ffmpeg to capture your desktop</title>
-<link href="http://www.designr8.com/blog?title=Using ffmpeg to capture your desktop" ></link>
-<id>http://www.designr8.com/blog?title=Using ffmpeg to capture your desktop</id>
-<updated>Fri Nov 18 09:39:53 MST 2011</updated>
+<link href="http://www.designr8.com/blog?title=Using%20ffmpeg%20to%20capture%20your%20desktop"/>
+<id>http://www.designr8.com/blog?title=Using%20ffmpeg%20to%20capture%20your%20desktop</id>
+<updated>2011-11-18T09:39:53-07:00</updated>
 <summary>Capture your desktop using ffmpeg</summary>
-<category>screencast</category> 
-<category>recording</category> 
-<category>ffmpeg</category> 
-<thumbnail>https://lh5.googleusercontent.com/-fVUN1FZWhO8/UF1UrZnq9EI/AAAAAAAAFgU/_VIzQjXHVGs/s200/ffmpeg.jpg</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <category term="/linux" label="linux"/>
+ 
+ <media:thumbnail url="https://lh5.googleusercontent.com/-fVUN1FZWhO8/UF1UrZnq9EI/AAAAAAAAFgU/_VIzQjXHVGs/s200/ffmpeg.jpg"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
 <p>
 Captureing your desktop is useful for creating tutorials. I've discovered that 
 a lot of people have trouble following directions given in text, and if they
@@ -1228,7 +1363,7 @@ really help someone that is not versed in command line?
 ffmpeg works on windows, linux, and likely mac. 
 </p>
 <p>
-<img src="https://lh5.googleusercontent.com/-fVUN1FZWhO8/UF1UrZnq9EI/AAAAAAAAFgU/_VIzQjXHVGs/w313-h235-n-k/ffmpeg.jpg" />
+<img src="https://lh5.googleusercontent.com/-fVUN1FZWhO8/UF1UrZnq9EI/AAAAAAAAFgU/_VIzQjXHVGs/w313-h235-n-k/ffmpeg.jpg"/>
 <a href="http://ffmpeg.org/">ffmpeg website</a>
 </p>
 <p>step 1: determine the name of your screen (follows -i on step 3)</p>
@@ -1242,7 +1377,7 @@ ffmpeg works on windows, linux, and likely mac.
 <code>ffplay output.mkv</code>
 <p>step 6: save the command in a text file and run it from a console other
 than the one you want to capture</p>
-<code> echo "ffmpeg -f x11grab -r 30 -s 1360X768 -i :0.0 -vcodec libx264 -vpre lossless_ultrafast -threads 0 -y embed.mkv" > scast.command
+<code> echo "ffmpeg -f x11grab -r 30 -s 1360X768 -i :0.0 -vcodec libx264 -vpre lossless_ultrafast -threads 0 -y embed.mkv" &gt; scast.command
 </code>
 <p>step 7: arrange your desktop and then drop to a console by pressing Alt+f1</p>
 <p>step 8: source the saved command (use the file name from step6)</p>
@@ -1251,24 +1386,32 @@ than the one you want to capture</p>
 <p>step 10: do your tutorial and end it with Alt+f1, then q</p>
 <p>step 11: login to youtube and upload screencast. youtube restricts videos be less than 15 minutes.</p>
 <p>step 12: embed your video into a webpage</p>
-<iframe sytle="position:ablsolute;left:0px;width=1280px;height=720px" width="1280" height="720" src="http://www.youtube.com/embed/9vQ9PvM53Ng?hd=1" frameborder="0" allowfullscreen="true"></iframe>
+
+<!-- look for a way to link to a page with this code -->
+<code>
+<pre>
+&lt;iframe sytle="position:ablsolute;left:0px;width=1280px;height=720px" width="1280" height="720" 
+src="http://www.youtube.com/embed/9vQ9PvM53Ng?hd=1" frameborder="0" allowfullscreen="true" /&gt;
+</pre>
+</code>
+
+
+</div>
 </content>
 </entry>
 
 <entry>
 <title>Printing Address Cards for Thunderbird</title>
-<link href="http://www.designr8.com/blog?title=Printing Address Cards for Thunderbird" ></link>
-<id>http://www.designr8.com/blog?title=Printing Address Cards for Thunderbird</id>
-<updated>Sun Nov 13 14:33:17 MST 2011</updated>
+<link href="http://www.designr8.com/blog?title=Printing%20Address%20Cards%20for%20Thunderbird"/>
+<id>http://www.designr8.com/blog?title=Printing%20Address%20Cards%20for%20Thunderbird</id>
+<updated>2011-11-13T14:33:17-07:00</updated>
 <summary>Beginners Guide to CSV, XML, C++, XSL, and CSS</summary>
-<category>Programming</category> 
-<category>Web Programming</category> 
-<category>XML</category>
-<category>Addresses</category> 
-<thumbnail>http://lh3.googleusercontent.com/-Wo6wRWWHKV8/TsCLhDbC-_I/AAAAAAAAEKc/W1W7dOlw_wc/s200/contact-card.png</thumbnail>
-<content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<img src="http://lh3.googleusercontent.com/-Wo6wRWWHKV8/TsCLhDbC-_I/AAAAAAAAEKc/W1W7dOlw_wc/s157/contact-card.png"
-     style="float:left;" />
+ 
+ <category term="/xml" label="xml"/>
+ 
+<media:thumbnail url="http://lh3.googleusercontent.com/-Wo6wRWWHKV8/TsCLhDbC-_I/AAAAAAAAEKc/W1W7dOlw_wc/s200/contact-card.png"/>
+<content type="xhtml"> <div xmlns="http://www.w3.org/1999/xhtml">
+<img src="http://lh3.googleusercontent.com/-Wo6wRWWHKV8/TsCLhDbC-_I/AAAAAAAAEKc/W1W7dOlw_wc/s157/contact-card.png" style="float:left;"/>
 <ul>
 <li>Motivation for printing Contacts, and issues with using default printouts</li>
 <li>The nature of exported contact files – csv from Thunderbird</li>
@@ -1298,8 +1441,8 @@ The tactic used by XML is instead of surrounding values that contain the special
 &amp; becomes &amp;amp;
 &lt; becomes &amp;lt;
 &gt; becomes &amp;gt;
-&quot; becomes &amp;quot;
-&#39; becomes &amp;#39;
+" becomes &amp;quot;
+' becomes &amp;#39;
 </pre>
 <p>
 Another caveat is that XML field names can not have a space in them, so we can eliminate or replace the spaces in field names.
@@ -1336,8 +1479,7 @@ thunderbird.csv <br/>
 tar -zxvf contact-cards.tar.gz &amp;&amp; cd contact-cards
 </pre>
 <a href="/blog/contact-cards.tar.gz">contact-cards.tar.gz</a>
-<img src="http://lh6.googleusercontent.com/-Gjn82Q7gyEg/TsCLi9H2YRI/AAAAAAAAEKk/Zm8Qdi5Q0Kg/s700/contact-cards-workflow.png"
-style="clear:both;" />
+<img src="http://lh6.googleusercontent.com/-Gjn82Q7gyEg/TsCLi9H2YRI/AAAAAAAAEKk/Zm8Qdi5Q0Kg/s700/contact-cards-workflow.png" style="clear:both;"/>
 <p>
 Open the files in Scite or any plain text editor. Then to compile and execute:
 </p>
@@ -1356,11 +1498,16 @@ Open the file contact-cards.xml in a text editor and Firefox to view the result.
 <h2>Looking at the C++ code</h2>
 <ul>
 <li>Comments in C++ are for the programmer to explain what is happening 
-</li><li>Programs can be divided up into logical units using functions
-</li><li>Variables are blocks of memory that hold values 
-</li><li>Values come in two flavors, primitive and objects
-</li><li>Primitaves are small values that usually are used to control logic of your program, whereas Objects usually represent the data and can be complex
-</li><li>All primative data types start with a lowercase letter, 
+</li>
+<li>Programs can be divided up into logical units using functions
+</li>
+<li>Variables are blocks of memory that hold values 
+</li>
+<li>Values come in two flavors, primitive and objects
+</li>
+<li>Primitaves are small values that usually are used to control logic of your program, whereas Objects usually represent the data and can be complex
+</li>
+<li>All primative data types start with a lowercase letter, 
 and usually Object data types start with an Uppercase letter.
 </li>
 </ul>
@@ -1376,6 +1523,7 @@ Looking at the XSL code
 Firstly, an XSL file is a valid XML file. Secondly, there is a lot of information on XSL. Again, w3schools and zvon is really all you need for learning and reference. The goal of the XSL is to transform the XML into HTML. Its not typical html though, its HTML without formatting. The html tags are logical partitions of the data we want to choose from the XML.
 The XSL file uses a LINK tag to link to the style sheet (CSS).
 </p>
+</div>
 </content>
 </entry>
 
@@ -1384,19 +1532,18 @@ The XSL file uses a LINK tag to link to the style sheet (CSS).
 
 
   
-  <entry >
-    <title >Resurrecting an Emachine</title>
-    <link href="http://www.designr8.com/blog?title=Resurrecting an Emachine"/>
-    <id>http://www.designr8.com/blog?title=Resurrecting an Emachine</id>
-    <updated>Sat Nov 12 23:00:00 MST 2011</updated>
+  <entry>
+    <title>Resurrecting an Emachine</title>
+    <link href="http://www.designr8.com/blog?title=Resurrecting%20an%20Emachine"/>
+    <id>http://www.designr8.com/blog?title=Resurrecting%20an%20Emachine</id>
+    <updated>2011-11-12T23:00:00-07:00</updated>
     <summary>Using Ubuntu Linux to recover files from corrupt hard drive. Emachine recover.</summary>
-  <category term="Emachine" />
-  <category term="Linux"/>
-  <category term="Repair" />
-  <thumbnail>https://lh6.googleusercontent.com/-D5ZSp7ZidZM/UF1V4cqTumI/AAAAAAAAFgc/MIIhaw9CPQU/s200/arch-linux-black.png</thumbnail>
-    <content type="xhtml" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <img src="https://lh6.googleusercontent.com/-D5ZSp7ZidZM/UF1V4cqTumI/AAAAAAAAFgc/MIIhaw9CPQU/s700/arch-linux-black.png"
-     style="float:left;" />
+   <category term="/linux" label="linux"/>
+   
+   <media:thumbnail url="https://lh6.googleusercontent.com/-D5ZSp7ZidZM/UF1V4cqTumI/AAAAAAAAFgc/MIIhaw9CPQU/s200/arch-linux-black.png"/>
+  <content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
+    <img src="https://lh6.googleusercontent.com/-D5ZSp7ZidZM/UF1V4cqTumI/AAAAAAAAFgc/MIIhaw9CPQU/s700/arch-linux-black.png" style="float:left;"/>
 <p>
 	I was faced with a computer that would not boot at all, safe mode or
 	otherwise. But there was a lot of valuable pictures on the computer. I
@@ -1408,7 +1555,7 @@ The XSL file uses a LINK tag to link to the style sheet (CSS).
 	<p>
 		The first task was to recover the photos and documents. I used a regular
 		Ubuntu Linux install iso image. Instead of installing Linux at the
-		first boot menu I selected &quot;Try Ubuntu&quot;
+		first boot menu I selected "Try Ubuntu"
 	</p>
 	<p>
 		It mounted the Windows partiton no problem and I found the picures, but
@@ -1454,7 +1601,8 @@ The XSL file uses a LINK tag to link to the style sheet (CSS).
 		driver from Nvidia. Thats it!
 	</p>   
 	
-    </content>
+    </div>
+</content>
   </entry>
   
 
